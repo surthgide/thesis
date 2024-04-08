@@ -5,4 +5,7 @@
 + domain wall? conformal Lifshitz?
 + AdS length? line element calculated from metric or something else? radius of AdS poincaré disk?
 + designer gravity?
+ 
+== A solution-generating method in Einstein-scalar gravity
+
 + 
