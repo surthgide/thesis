@@ -59,10 +59,14 @@
 	
 	pagebreak()
 
+	v(1fr)
+
 	par(justify: false)[
 		*Abstract* \
 		#abstract
 		]
+	
+	v(2fr)
 
 	pagebreak()
 
@@ -72,7 +76,10 @@
 
 	set page(
 		header: align(right)[
-			_ #title _
+			#text(
+				size: 10pt,
+				weight: "regular",
+				)[_ #title _]
 			],
 		numbering: "1",
 		)
@@ -90,6 +97,12 @@
 		numbering: "1.",
 		depth: 1,
 		)
+	
+	show heading.where(
+		level: 1
+		): it => text(
+			size: 25pt,
+			)[#it.body #v(20pt)]
 
 	set align(left)
 	doc
