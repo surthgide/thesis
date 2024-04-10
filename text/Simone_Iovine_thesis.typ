@@ -14,24 +14,42 @@
 			email: "mariano.cadoni@ca.infn.it",
 			),
 		),
-	abstract: lorem(80),
+	abstract: include "abstract.typ",
 	doc,
 	)
 
+#v(50pt)
+
 = Introduction
 
-#lorem(100)
+#include "0_intro.typ"
+
+#pagebreak()
+
+#v(50pt)
 
 = Section 1
 
-#lorem(100)
+#include "1_sec.typ"
 
-== Subsection
+#pagebreak()
 
-#lorem(100)
+#v(50pt)
 
 = Section 2
 
-#lorem(100)
+#include "2_sec.typ"
+
+#pagebreak()
+
+#v(50pt)
+
+= Section 3
+
+#include "3_sec.typ"
+
+#pagebreak()
+
+#v(50pt)
 
 #bibliography("bibliography.yml")
