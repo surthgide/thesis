@@ -8,4 +8,8 @@
  
 == A solution-generating method in Einstein-scalar gravity
 
++ horn/flux tube type solutions?
+
+== Sine-Gordon solitonic scalar stars and black holes
+
 + 
