@@ -12,4 +12,8 @@
 
 == Sine-Gordon solitonic scalar stars and black holes
 
++ compactness? how is it defined?
+
+== Scalar stars and lumps with (A)dS core
+
 + 
