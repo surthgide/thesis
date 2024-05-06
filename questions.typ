@@ -16,4 +16,7 @@
 
 == Scalar stars and lumps with (A)dS core
 
++ super-plankian emissions?
++ Nariai spacetime? did i understand correctly that it is the interpolation solution between a Schwarzschild black hole and a dS spacetime?
++ why must U(0) = 1? does this lead to the singularity's smearing or is it just to ensure the vanishing at infinity?
 + 
