@@ -1,0 +1,111 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2946,        101]
+NotebookOptionsPosition[      2469,         84]
+NotebookOutlinePosition[      2867,        100]
+CellTagsIndexPosition[      2824,         97]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"d", "/", "dx"}], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"r", "**", "2"}], " ", "P", 
+      RowBox[{
+       RowBox[{"(", "x", ")"}], "/", 
+       RowBox[{"x", "**", "2"}]}]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"c_", "2"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"2", "/", 
+         RowBox[{"r", "**", "2"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"integral", " ", 
+         RowBox[{"x", "/", "P"}], 
+         RowBox[{
+          RowBox[{"(", "x", ")"}], "**", "4"}]}], ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"c_", 
+         RowBox[{"1", "/", 
+          RowBox[{"r", "**", "3"}]}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"integral", " ", 
+         RowBox[{
+          RowBox[{"x", "**", "2"}], "/", "P"}], 
+         RowBox[{
+          RowBox[{"(", "x", ")"}], "**", "4"}]}], ")"}]}]}], ")"}]}], 
+   ")"}]}]], "Input",
+ CellChangeTimes->{{3.9253739629040337`*^9, 3.925373969615326*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"1490b562-48fa-4cf3-a9a6-cf7df62810f8"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"d", " ", "P", " ", "x", " ", 
+   RowBox[{"r", "**", "2"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"2", " ", "integral", " ", "x", " ", 
+       RowBox[{"x", "**", "4"}]}], 
+      RowBox[{"P", " ", 
+       RowBox[{"r", "**", "2"}]}]], "+", 
+     RowBox[{"2", " ", "c_"}], "+", 
+     FractionBox[
+      RowBox[{"integral", " ", 
+       RowBox[{"x", "**", "2"}], " ", 
+       RowBox[{"x", "**", "4"}], " ", "c_"}], 
+      RowBox[{"P", " ", 
+       RowBox[{"r", "**", "3"}]}]]}], ")"}]}], 
+  RowBox[{"dx", " ", 
+   RowBox[{"x", "**", "2"}]}]]], "Output",
+ CellChangeTimes->{3.925373979899002*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"31606ef0-df02-4dbc-b90b-900ffe36f21e"]
+}, Open  ]]
+},
+WindowSize->{1150.5, 791.25},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cdc2be7b-0d63-4557-b210-76b8cb8cdaac"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1133, 36, 31, "Input",ExpressionUUID->"1490b562-48fa-4cf3-a9a6-cf7df62810f8"],
+Cell[1716, 60, 737, 21, 67, "Output",ExpressionUUID->"31606ef0-df02-4dbc-b90b-900ffe36f21e"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
