@@ -70,7 +70,14 @@
 
 	pagebreak()
 
-	outline()
+	v(1fr)
+
+	outline(
+		title: [Contents],
+		indent: auto,
+		)
+
+	v(2fr)
 	
 	pagebreak()
 
@@ -83,6 +90,8 @@
 			],
 		numbering: "1",
 		)
+
+	counter(page).update(1)
 
 	set par(
 		justify: true,
@@ -98,11 +107,18 @@
 		depth: 1,
 		)
 	
-	show heading.where(
-		level: 1
-		): it => text(
-			size: 25pt,
-			)[#it.body #v(20pt)]
+	show heading.where(level: 1): it => [
+		#set text(size: 30pt)
+		#v(20pt)
+		#counter(math.equation).update(0)
+		#it.body
+		#v(30pt)
+		]
+
+	set math.equation(numbering: n => {
+		let k = counter(heading).get().first()
+		numbering("(1.1)", k, n)
+		})
 
 	set align(left)
 	doc
