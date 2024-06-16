@@ -20,15 +20,11 @@
 
 #v(50pt)
 
-= Introduction
-
 #include "0_intro.typ"
 
 #pagebreak()
 
 #v(50pt)
-
-= Section 1
 
 #include "1_sec.typ"
 
@@ -36,15 +32,11 @@
 
 #v(50pt)
 
-= Section 2
-
 #include "2_sec.typ"
 
 #pagebreak()
 
 #v(50pt)
-
-= Section 3
 
 #include "3_sec.typ"
 
