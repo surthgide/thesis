@@ -1,5 +1,8 @@
 #import "temp_thesis.typ": temp
 
+// math symbols
+#import "@preview/physica:0.9.3": *
+
 #show: doc => temp(
 	title: [
 		Thesis title
