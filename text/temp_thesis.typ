@@ -118,7 +118,8 @@
 	set math.equation(numbering: n => {
 		let k = counter(heading).get().first()
 		numbering("(1.1)", k, n)
-		})
+		},
+		supplement: [Eq.])
 
 	set align(left)
 	doc
