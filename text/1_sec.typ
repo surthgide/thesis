@@ -42,7 +42,7 @@ $ (grad_c grad_d - grad_d grad_c) X^a = ( partial_c tensor(Gamma, +a, -b, -d) - 
 
 using Schwarz's theorem $partial_( "["a ) partial_( b"]" ) = 0$, torsion-free connections, i.e. $tensor(Gamma, +a, -b, -c) = tensor(Gamma, +a, -c, -b)$, and defining the Riemann tensor as
 
-$ tensor(R, +a, -b, -c, -d) := partial_c tensor(Gamma, +a, -b, -d) - partial_d tensor(Gamma, +a, -b, -c) + tensor(Gamma, +e, -b, -d) tensor(Gamma, +a, -e, -c) - tensor(Gamma, +e, -b, -c) tensor(Gamma, +a, -e, -d) $
+$ tensor(R, +a, -b, -c, -d) := partial_c tensor(Gamma, +a, -b, -d) - partial_d tensor(Gamma, +a, -b, -c) + tensor(Gamma, +e, -b, -d) tensor(Gamma, +a, -e, -c) - tensor(Gamma, +e, -b, -c) tensor(Gamma, +a, -e, -d) $ <riem-ten>
 
 therefore
 
@@ -68,12 +68,33 @@ and to compute a vector's modulus
 
 $ X^2 := X^a X_a = g_(a b) X^a X^b $
 
-Since the modulus is invariant
+The affine connection can be written in terms of the metric tensor, the former taking the name of metric connection, and the form
 
-$ grad_c g_(a b)
-	&= partial_c g_(a b) + tensor(Gamma, +a, -b, -c) g_(a b) $
+$ tensor(Gamma, +a, -b, -c) = 1/2 g^(a d) ( partial_b g_(d c) + partial_c g_(d b) partial_d g_(b c)) $ 
 
+Using this formula and @riem-ten, the Riemann tensor is shown to satisfy these relations
 
+$ R_(a b c d) = - R_(a b d c) = - R_(b a c d) = R_(c d a b) $
+
+$ R_(a b c d) + R_(a d b c) + R_(a c d b) = 0 $
+
+$ grad_a R_(d e b c) + grad_c R_(d e a b) + grad_b R_(d e c a) = 0 $
+
+where the last ones are called Bianchi identities.
+
+From the Riemann tensor, the Ricci tensor $R_(a b)$ and the Ricci scalar $R$ can be defined as
+
+$ R_(a b) := tensor(R, +c, -a, -c, -b) = g^(c d) R_(d a c b) $
+
+$ R := g^(a b) R_(a b) $
+
+Moreover, the Einstein tensor is defined to be
+
+$ G_(a b) := R_(a b) - 1/2 g_(a b) R $
+
+which satisfies the contracted Bianchi identities, namely
+
+$ grad_b tensor(G, -a, +b) = 0 $
 
 == Physics background
 
