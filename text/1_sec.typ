@@ -191,4 +191,14 @@ $ T_(a b) := - 2/detg var(detg cal(L)_m, g^(a b)) $
 
 we can rewrite @varEFE as
 
-$  $
+$ R_(a b) - 1/2 R g_(a b) = kappa T_(a b) $
+
+Furthermore, if the cosmological constant $Lambda$ is added in the Einstein-Hilbert action
+
+$ S = integral dd(x,4) detg ( 1/(2 kappa) ( R - 2 Lambda) + cal(L)_m ) $
+
+the EFE take on the form
+
+$ R_(a b) - 1/2 ( R - 2 Lambda ) g_(a b) = kappa T_(a b) $
+
+This set of equations, which gives as a solution the equations of motion, can be interpreted in two ways: from right to left, the energy content of spacetime determines the curvature of the latter; from left to right, the curvature of the spacetime tells the metter within it how to move. The cosmological constant term could mean that the vacuum possesses a non-zero energy or that spacetime has an instrinsci curvature, or both.
