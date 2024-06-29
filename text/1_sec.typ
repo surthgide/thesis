@@ -95,7 +95,7 @@ $ R := g^(a b) R_(a b) $
 
 Moreover, the Einstein tensor is defined to be
 
-$ G_(a b) := R_(a b) - 1/2 g_(a b) R $
+$ G_(a b) := R_(a b) - 1/2 g_(a b) R $ <ein-ten>
 
 which satisfies the contracted Bianchi identities, namely
 
@@ -161,17 +161,17 @@ The generalization from special relativity to general relativity passed through 
 
 - _Correspondence_: general relativity should agree with special relativity in absence of a gravitational field and low velocities.
 
-== Derivation of EFE
+=== Derivation of EFE
 
 Using the metric signature $g_(a b) = op(diag) (-, +, +, +)$, we derive the Einstein fiels equations (EFE) from the Einstein-Hilbert action
 
-$ S = 1/(2 kappa) integral dd(x,4) detg ( R cal(L)_m ) $
+$ S = integral dd(x,4) detg ( R + 2 kappa cal(L)_m ) $
 
-where $kappa := 8 pi G c^(-4)$ is Einstein constant and $cal(L)_m := kappa R$ represents the matter fields Lagrangian.
+where $kappa := 8 pi G c^(-4)$ is Einstein constant and $cal(L)_m$ represents the matter fields Lagrangian.
 
 The principle of stationary action asserts that $delta S = 0$, from which
 
-$ delta S = integral dd(x,4) detg ( 1/(2 kappa) ( var(R, g_(a b)) + R/(detg) var(detg, g^(a b)) ) + 1/detg var(detg cal(L)_m, g^(a b)) ) delta g^(a b) = 0 $
+$ delta S = integral dd(x,4) detg ( var(R, g_(a b)) + R/(detg) var(detg, g^(a b)) + ( 2 kappa )/detg var(detg cal(L)_m, g^(a b)) ) delta g^(a b) = 0 $
 
 This condition holds for any $delta g^(a b)$, therefore
 
@@ -189,16 +189,16 @@ Defining the stress-energy tensor as
 
 $ T_(a b) := - 2/detg var(detg cal(L)_m, g^(a b)) $
 
-we can rewrite @varEFE as
+and recalling @ein-ten, we can rewrite @varEFE as
 
-$ R_(a b) - 1/2 R g_(a b) = kappa T_(a b) $
+$ G_(a b) = kappa T_(a b) $
 
 Furthermore, if the cosmological constant $Lambda$ is added in the Einstein-Hilbert action
 
-$ S = integral dd(x,4) detg ( 1/(2 kappa) ( R - 2 Lambda) + cal(L)_m ) $
+$ S = integral dd(x,4) detg ( R - 2 Lambda + 2 kappa cal(L)_m ) $
 
 the EFE take on the form
 
-$ R_(a b) - 1/2 ( R - 2 Lambda ) g_(a b) = kappa T_(a b) $
+$ G_(a b) + Lambda g_(a b) = kappa T_(a b) $
 
-This set of equations, which gives as a solution the equations of motion, can be interpreted in two ways: from right to left, the energy content of spacetime determines the curvature of the latter; from left to right, the curvature of the spacetime tells the metter within it how to move. The cosmological constant term could mean that the vacuum possesses a non-zero energy or that spacetime has an instrinsci curvature, or both.
+This set of equations, which gives as a solution the equations of motion, can be interpreted in two ways: from right to left, the energy content of spacetime determines the curvature of the latter; from left to right, the curvature of the spacetime tells the matter within it how to move. The cosmological constant term could mean that the vacuum possesses a non-zero energy or that spacetime has an intrinsic curvature, or both.
