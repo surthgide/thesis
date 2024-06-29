@@ -77,6 +77,8 @@
 		indent: auto,
 		)
 
+	// show outline.entry: set text(fill: blue)
+
 	v(2fr)
 	
 	pagebreak()
@@ -120,6 +122,8 @@
 		numbering("(1.1)", k, n)
 		},
 		supplement: [Eq.])
+
+	show ref: set text(fill: blue)
 
 	set align(left)
 	doc
