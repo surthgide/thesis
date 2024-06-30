@@ -10,16 +10,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    108660,       2651]
-NotebookOptionsPosition[    103798,       2560]
-NotebookOutlinePosition[    104194,       2576]
-CellTagsIndexPosition[    104151,       2573]
+NotebookDataLength[     45967,       1180]
+NotebookOptionsPosition[     40354,       1089]
+NotebookOutlinePosition[     40750,       1105]
+CellTagsIndexPosition[     40707,       1102]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-
-Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"URLDownload", "[", 
   RowBox[{
@@ -32,62 +30,30 @@ Cell[BoxData[
       "\"\<OGRe.m\>\""}], "}"}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.928662980385099*^9, 3.928662980386321*^9}, 
    3.928667630635532*^9, 3.9286725829458*^9},
- CellLabel->
-  "In[399]:=",ExpressionUUID->"12bc97be-70b3-4c05-a17e-ad9d006f40fe"],
-
-Cell[BoxData[
- RowBox[{"File", "[", 
-  TemplateBox[{"\"/home/fsou/.Mathematica/Applications/OGRe.m\""},
-   "FileArgument"], "]"}]], "Output",
- CellChangeTimes->{3.928672583833386*^9},
- CellLabel->
-  "Out[399]=",ExpressionUUID->"fe21bbf2-fb8a-4aee-a819-2dd1da78a296"]
-}, Open  ]],
+ CellLabel->"In[71]:=",ExpressionUUID->"12bc97be-70b3-4c05-a17e-ad9d006f40fe"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<OGRe`\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.928663007414434*^9, 3.928663007416204*^9}},
- CellLabel->
-  "In[380]:=",ExpressionUUID->"54c19aa1-1d36-4c8a-852d-909f93ad6c45"],
-
-Cell[CellGroupData[{
+ CellLabel->"In[72]:=",ExpressionUUID->"54c19aa1-1d36-4c8a-852d-909f93ad6c45"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"TSetParallelization", "[", "True", "]"}], ";"}]], "Input",
  CellChangeTimes->{3.928667625875245*^9},
- CellLabel->
-  "In[381]:=",ExpressionUUID->"a0d26ff0-1db5-428e-8ac3-34f12ddd9933"],
+ CellLabel->"In[73]:=",ExpressionUUID->"a0d26ff0-1db5-428e-8ac3-34f12ddd9933"],
 
-Cell[BoxData["\<\"Parallelization enabled.\"\>"], "Output",
- Editable->False,
- CellLabelStyle->Directive["CellLabel", Smaller, 
-   RGBColor[0, 0, 1]],
- CellChangeTimes->{3.92866766617022*^9},
- CellLabel->"OGRe:",ExpressionUUID->"99aeec78-eac3-4ab9-9970-4ec0e3bda6af"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Off", "[", 
+  RowBox[{"TMessage", "::", "WarningOverwrite"}], "]"}]], "Input",
+ CellChangeTimes->{{3.928740397581626*^9, 3.928740420590488*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"4260d15a-7fc0-44d4-8309-7a7267c13ee9"],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"TSetAllowOverwrite", "[", "True", "]"}], ";"}]], "Input",
  CellChangeTimes->{3.928667624021707*^9},
- CellLabel->
-  "In[382]:=",ExpressionUUID->"f0c0930b-91f0-4819-9173-4f2f7ef9e9d5"],
-
-Cell[BoxData[
- TemplateBox[{
-  "TSetAllowOverwrite", "Notify", 
-   "\"Overwriting tensors turned \
-\\!\\(\\*RowBox[{\\\"\\\\\\\"on\\\\\\\"\\\"}]\\).\"", 2, 382, 100, 
-   19435229831241774661, "Local", "OGRe`TSetAllowOverwrite"},
-  "MessageTemplate2"]], "Message", "MSG",
- CellChangeTimes->{3.9286676662085323`*^9},
- CellLabel->
-  "During evaluation of \
-In[382]:=",ExpressionUUID->"410658cc-1076-4dca-ae4a-ef22b5c383bf"]
-}, Open  ]],
+ CellLabel->"In[75]:=",ExpressionUUID->"f0c0930b-91f0-4819-9173-4f2f7ef9e9d5"],
 
 Cell[BoxData[
  RowBox[{
@@ -95,10 +61,7 @@ Cell[BoxData[
   ";"}]], "Input",
  CellChangeTimes->{{3.928664033609013*^9, 3.928664043399551*^9}, 
    3.928667619404882*^9},
- CellLabel->
-  "In[383]:=",ExpressionUUID->"945fff7c-f5b0-4f1e-9ebe-0889e9e9c0b1"],
-
-Cell[CellGroupData[{
+ CellLabel->"In[76]:=",ExpressionUUID->"945fff7c-f5b0-4f1e-9ebe-0889e9e9c0b1"],
 
 Cell[BoxData[
  RowBox[{
@@ -109,46 +72,33 @@ Cell[BoxData[
       "}"}]}], "]"}], ";"}]], "Input",
  CellChangeTimes->{{3.928663065184011*^9, 3.928663147922728*^9}, {
    3.928663190417783*^9, 3.928663194192367*^9}, {3.928667445214726*^9, 
-   3.9286674499454412`*^9}, 3.928667633937965*^9},
- CellLabel->
-  "In[384]:=",ExpressionUUID->"8dd74952-ee24-4f75-afd8-25b26403da31"],
-
-Cell[BoxData[
- TemplateBox[{
-  "TMessage", "WarningOverwrite", 
-   "\"Overwriting the tensor \\\"\\!\\(\\*RowBox[{\\\"\\\\\\\"mod-sph\\\\\\\"\
-\\\"}]\\)\\\".\"", 2, 384, 101, 19435229831241774661, "Local", 
-   "OGRe`TMessage"},
-  "MessageTemplate2"]], "Message", "MSG",
- CellChangeTimes->{3.928667666256516*^9},
- CellLabel->
-  "During evaluation of \
-In[384]:=",ExpressionUUID->"357f0359-9fab-4162-9ec7-1774984e4da8"]
-}, Open  ]],
+   3.928667449945441*^9}, 3.928667633937965*^9, {3.928740766377904*^9, 
+   3.9287407796949167`*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"8dd74952-ee24-4f75-afd8-25b26403da31"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"TSetReservedSymbols", "[", 
   RowBox[{"{", 
-   RowBox[{"U", ",", "R", ",", "B"}], "}"}], "]"}]], "Input",
+   RowBox[{"U", ",", "R", ",", "B", ",", "\[Phi]", ",", "\[Kappa]"}], "}"}], 
+  "]"}]], "Input",
  CellChangeTimes->{{3.92866392364452*^9, 3.928663939420662*^9}, {
   3.928666254990447*^9, 3.928666255296418*^9}, {3.928666290696372*^9, 
-  3.928666293679111*^9}},
+  3.928666293679111*^9}, {3.92874074029622*^9, 3.9287407464775963`*^9}},
  CellLabel->
-  "In[385]:=",ExpressionUUID->"31450a97-e74f-43d2-8be4-f3fc791e6cb0"],
+  "In[228]:=",ExpressionUUID->"31450a97-e74f-43d2-8be4-f3fc791e6cb0"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"\<\"t\"\>", ",", "\<\"r\"\>", ",", "\<\"\[Theta]\"\>", 
-   ",", "\<\"\[Phi]\"\>", ",", "\<\"U\"\>", ",", "\<\"R\"\>", 
-   ",", "\<\"B\"\>", ",", "\<\"\[Alpha]\"\>"}], "}"}]], "Output",
- CellChangeTimes->{3.928667666292562*^9},
+   ",", "\<\"\[Alpha]\"\>", ",", "\<\"U\"\>", ",", "\<\"R\"\>", 
+   ",", "\<\"B\"\>", ",", "\<\"\[Phi]\"\>", ",", "\<\"\[Kappa]\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.928746088370901*^9},
  CellLabel->
-  "Out[385]=",ExpressionUUID->"38a75138-c841-40b0-8dd6-d620d8e8a5f1"]
+  "Out[228]=",ExpressionUUID->"84a6bfed-399c-4e92-b396-623643b8d1ec"]
 }, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -171,234 +121,73 @@ Cell[BoxData[
          RowBox[{"B", "-", "1"}]], 
         RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}]}]}], "}"}], "]"}]}], "]"}], 
   ";"}]], "Input",
- CellChangeTimes->{{3.928663219541174*^9, 3.9286632712007723`*^9}, {
-   3.928663400181301*^9, 3.9286634708793173`*^9}, {3.928663831395475*^9, 
+ CellChangeTimes->{{3.928663219541174*^9, 3.928663271200773*^9}, {
+   3.928663400181301*^9, 3.9286634708793178`*^9}, {3.928663831395475*^9, 
    3.928663873014153*^9}, {3.9286662433234386`*^9, 3.928666251109428*^9}, {
    3.928666322681279*^9, 3.928666323054545*^9}, {3.928667460261191*^9, 
    3.928667465641451*^9}, 3.928667645423317*^9},
- CellLabel->
-  "In[386]:=",ExpressionUUID->"a3c9defa-d35f-4d0e-91cc-8c70a7393793"],
-
-Cell[BoxData[
- TemplateBox[{
-  "TMessage", "WarningOverwrite", 
-   "\"Overwriting the tensor \
-\\\"\\!\\(\\*RowBox[{\\\"\\\\\\\"anz\\\\\\\"\\\"}]\\)\\\".\"", 2, 386, 102, 
-   19435229831241774661, "Local", "OGRe`TMessage"},
-  "MessageTemplate2"]], "Message", "MSG",
- CellChangeTimes->{3.928667666331252*^9},
- CellLabel->
-  "During evaluation of \
-In[386]:=",ExpressionUUID->"33b2d8a1-a2cb-498f-8977-d044e09de27f"],
-
-Cell[BoxData[
- TemplateBox[{
-  "TNewMetric", "WarningOverwrite", 
-   "\"All curvature tensors previously calculated from the metric being \
-overwritten will be deleted.\"", 2, 386, 103, 19435229831241774661, "Local", 
-   "OGRe`TNewMetric"},
-  "MessageTemplate2"]], "Message", "MSG",
- CellChangeTimes->{3.928667666626927*^9},
- CellLabel->
-  "During evaluation of \
-In[386]:=",ExpressionUUID->"4a4de615-8fe4-4cbc-9f25-8f214a3d9d0f"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+ CellLabel->"In[79]:=",ExpressionUUID->"a3c9defa-d35f-4d0e-91cc-8c70a7393793"],
 
 Cell[BoxData[
  RowBox[{"TShow", "[", "\"\<mod-sph\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.928663482675426*^9, 3.928663494982398*^9}},
- CellLabel->
-  "In[387]:=",ExpressionUUID->"9a8056ff-ec04-4719-ba37-eb51b4d078b5"],
-
-Cell[BoxData[
- StyleBox[
-  TemplateBox[{"\"mod-sph\"", "\":   \"", 
-    TemplateBox[{"\"x\"", 
-      TemplateBox[{
-        StyleBox["\"a\"", ShowContents -> False, StripOnInput -> False]}, 
-       "RowDefault"], 
-      TemplateBox[{"\"a\""}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-     SubsuperscriptBox], "\" = \"", 
-    TagBox[
-     RowBox[{"(", "\[NoBreak]", 
-       TagBox[
-        GridBox[{{"t"}, {"r"}, {"\[Theta]"}, {"\[Alpha]"}}, RowSpacings -> 1, 
-         ColumnAlignments -> Center, ColumnAlignments -> Left], Column], 
-       "\[NoBreak]", ")"}], 
-     Function[BoxForm`e$, 
-      MatrixForm[BoxForm`e$]]]},
-   "RowDefault"], "DisplayFormula",
-  StripOnInput->False]], "Output",
- Editable->False,
- CellLabelStyle->Directive["CellLabel", Smaller, 
-   RGBColor[0, 0, 1]],
- CellChangeTimes->{3.9286676666992903`*^9},
- CellLabel->"OGRe:",ExpressionUUID->"20eaa265-cecf-4351-9f76-7c6df02b3f8a"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+ CellLabel->"In[80]:=",ExpressionUUID->"9a8056ff-ec04-4719-ba37-eb51b4d078b5"],
 
 Cell[BoxData[
  RowBox[{"TShow", "[", " ", "\"\<anz\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.928663503184602*^9, 3.9286635151769447`*^9}},
+ CellLabel->"In[81]:=",ExpressionUUID->"cd2b81db-0f50-47ec-b1c6-60dab060a804"],
+
+Cell[BoxData[
+ RowBox[{"TLineElement", "[", "\"\<anz\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.928663702411663*^9, 3.928663720965055*^9}, {
+  3.928748050743779*^9, 3.928748052332472*^9}},
  CellLabel->
-  "In[388]:=",ExpressionUUID->"cd2b81db-0f50-47ec-b1c6-60dab060a804"],
+  "In[282]:=",ExpressionUUID->"e8d7d592-bd02-4eb3-8f28-2ecb5fdffaaa"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"TVolumeElementSquared", "[", "\"\<anz\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Sqrt", "[", 
+   RowBox[{
+    RowBox[{"-", "1"}], "*", "%"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"TShow", "@", 
+  RowBox[{"TNewTensor", "[", 
+   RowBox[{"\"\<sqrtg\>\"", ",", "\"\<anz\>\"", ",", "\"\<mod-sph\>\"", ",", 
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{"{", "%", "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.928663993208461*^9, 3.928664002507646*^9}, {
+  3.9287479778740788`*^9, 3.92874803914325*^9}, {3.928748071914575*^9, 
+  3.928748204261075*^9}, {3.928748307221098*^9, 3.928748313049591*^9}},
+ CellLabel->
+  "In[311]:=",ExpressionUUID->"ca14de5e-2a4f-4cde-b0b0-63846f830cf0"],
 
 Cell[BoxData[
  StyleBox[
-  TemplateBox[{"\"anz\"", "\":   \"", 
-    TemplateBox[{"\"g\"", 
-      TemplateBox[{"\"a\"", "\"b\""}, "RowDefault"], 
-      TemplateBox[{
-        StyleBox["\"a\"", ShowContents -> False, StripOnInput -> False], 
-        StyleBox["\"b\"", ShowContents -> False, StripOnInput -> False]}, 
-       "RowDefault"]}, "Subsuperscript", SyntaxForm -> SubsuperscriptBox], 
-    "\"(\"", 
+  TemplateBox[{"\"sqrtg\"", "\":   \"", 
+    TemplateBox[{"\"\[DottedSquare]\"", 
+      TemplateBox[{}, "RowDefault"], 
+      TemplateBox[{}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
+     SubsuperscriptBox], "\"(\"", 
     TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
      "RowWithSeparators"], "\")\"", "\" = \"", 
-    TagBox[
-     RowBox[{"(", "\[NoBreak]", 
-       GridBox[{{
-          RowBox[{"-", "U"}], "0", "0", "0"}, {"0", 
-          TemplateBox[{
-            InterpretationBox[
-             
-             RowBox[{"\" \"", "\[InvisibleSpace]", "U", "\[InvisibleSpace]", 
-               "\" \""}], 
-             SequenceForm[" ", $CellContext`U, " "], Editable -> False], 
-            RowBox[{"-", "1"}]}, "Superscript", SyntaxForm -> SuperscriptBox],
-           "0", "0"}, {"0", "0", 
-          TemplateBox[{
-            InterpretationBox[
-             
-             RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-               "\" \""}], 
-             SequenceForm[" ", $CellContext`R, " "], Editable -> False], "2"},
-            "Superscript", SyntaxForm -> SuperscriptBox], "0"}, {
-         "0", "0", "0", 
-          RowBox[{
-            TemplateBox[{
-              InterpretationBox[
-               
-               RowBox[{
-                "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                 "\" \""}], 
-               SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-              RowBox[{
-                RowBox[{"-", "1"}], "+", "B"}]}, "Superscript", SyntaxForm -> 
-             SuperscriptBox], " ", 
-            RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}]}]}}, RowSpacings -> 1, 
-        ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> 
-        Center], "\[NoBreak]", ")"}], 
-     Function[BoxForm`e$, 
-      MatrixForm[BoxForm`e$]]]},
+    SqrtBox[
+     RowBox[{
+       SuperscriptBox["R", 
+        RowBox[{"1", "+", "B"}]], " ", 
+       RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}]}]]},
    "RowDefault"], "DisplayFormula",
   StripOnInput->False]], "Output",
  Editable->False,
  CellLabelStyle->Directive["CellLabel", Smaller, 
    RGBColor[0, 0, 1]],
- CellChangeTimes->{3.92866766675032*^9},
- CellLabel->"OGRe:",ExpressionUUID->"528f4a7d-194f-4564-a02f-3e57923e7fcf"]
+ CellChangeTimes->{3.928748314721313*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"228c34c2-54cb-496c-a292-331abda56946"]
 }, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"TLineElement", "[", "\"\<anz\>\"", "]"}]], "Input",
- CellChangeTimes->{{3.928663702411663*^9, 3.928663720965055*^9}},
- CellLabel->
-  "In[389]:=",ExpressionUUID->"e8d7d592-bd02-4eb3-8f28-2ecb5fdffaaa"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   TemplateBox[{
-     InterpretationBox[
-      RowBox[{
-       "\" \"", "\[InvisibleSpace]", "\[DoubleStruckD]\[Theta]", 
-        "\[InvisibleSpace]", "\" \""}], 
-      SequenceForm[" ", $CellContext`\[DoubleStruckD]\[Theta], " "], Editable -> 
-      False], "2"},
-    "Superscript"], " ", 
-   TemplateBox[{
-     InterpretationBox[
-      RowBox[{"\" \"", "\[InvisibleSpace]", 
-        RowBox[{"R", "[", "r", "]"}], "\[InvisibleSpace]", "\" \""}], 
-      SequenceForm[" ", 
-       $CellContext`R[$CellContext`r], " "], Editable -> False], "2"},
-    "Superscript"]}], "+", 
-  FractionBox[
-   TemplateBox[{
-     InterpretationBox[
-      RowBox[{
-       "\" \"", "\[InvisibleSpace]", "\[DoubleStruckD]r", "\[InvisibleSpace]",
-         "\" \""}], 
-      SequenceForm[" ", $CellContext`\[DoubleStruckD]r, " "], Editable -> 
-      False], "2"},
-    "Superscript"], 
-   RowBox[{"U", "[", "r", "]"}]], "-", 
-  RowBox[{
-   TemplateBox[{
-     InterpretationBox[
-      RowBox[{
-       "\" \"", "\[InvisibleSpace]", "\[DoubleStruckD]t", "\[InvisibleSpace]",
-         "\" \""}], 
-      SequenceForm[" ", $CellContext`\[DoubleStruckD]t, " "], Editable -> 
-      False], "2"},
-    "Superscript"], " ", 
-   RowBox[{"U", "[", "r", "]"}]}], "+", 
-  RowBox[{
-   TemplateBox[{
-     InterpretationBox[
-      RowBox[{
-       "\" \"", "\[InvisibleSpace]", "\[DoubleStruckD]\[Alpha]", 
-        "\[InvisibleSpace]", "\" \""}], 
-      SequenceForm[" ", $CellContext`\[DoubleStruckD]\[Alpha], " "], Editable -> 
-      False], "2"},
-    "Superscript"], " ", 
-   TemplateBox[{
-     InterpretationBox[
-      RowBox[{"\" \"", "\[InvisibleSpace]", 
-        RowBox[{"R", "[", "r", "]"}], "\[InvisibleSpace]", "\" \""}], 
-      SequenceForm[" ", 
-       $CellContext`R[$CellContext`r], " "], Editable -> False], 
-     RowBox[{
-       RowBox[{"-", "1"}], "+", "B"}]},
-    "Superscript"], " ", 
-   RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}]}]}]], "Output",
- CellChangeTimes->{3.928667666889345*^9},
- CellLabel->
-  "Out[389]=",ExpressionUUID->"bc27c04e-d0c5-4f20-b41c-e88149b966e3"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"TVolumeElementSquared", "[", "\"\<anz\>\"", "]"}]], "Input",
- CellChangeTimes->{{3.928663993208461*^9, 3.928664002507646*^9}},
- CellLabel->
-  "In[390]:=",ExpressionUUID->"ca14de5e-2a4f-4cde-b0b0-63846f830cf0"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"-", 
-   TemplateBox[{
-     InterpretationBox[
-      RowBox[{"\" \"", "\[InvisibleSpace]", 
-        RowBox[{"R", "[", "r", "]"}], "\[InvisibleSpace]", "\" \""}], 
-      SequenceForm[" ", 
-       $CellContext`R[$CellContext`r], " "], Editable -> False], 
-     RowBox[{"1", "+", "B"}]},
-    "Superscript"]}], " ", 
-  RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}]}]], "Output",
- CellChangeTimes->{3.928667666920166*^9},
- CellLabel->
-  "Out[390]=",ExpressionUUID->"c39d5550-a124-49f5-9027-d2d4ce6dcd99"]
-}, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"TShow", "@", 
@@ -409,994 +198,21 @@ Cell[BoxData[
      RowBox[{"\"\<anz\>\"", "[", "\"\<ab\>\"", "]"}]}], ",", "\"\<S\>\""}], 
    "]"}]}]], "Input",
  CellChangeTimes->{{3.928664290015439*^9, 3.928664376041798*^9}},
- CellLabel->
-  "In[391]:=",ExpressionUUID->"16c53d30-d29f-4895-aee5-7a68030ca203"],
-
-Cell[BoxData[
- StyleBox[
-  TemplateBox[{"\"Result\"", "\":   \"", 
-    TemplateBox[{"\"S\"", 
-      TemplateBox[{"\"a\"", "\"b\""}, "RowDefault"], 
-      TemplateBox[{
-        StyleBox["\"a\"", ShowContents -> False, StripOnInput -> False], 
-        StyleBox["\"b\"", ShowContents -> False, StripOnInput -> False]}, 
-       "RowDefault"]}, "Subsuperscript", SyntaxForm -> SubsuperscriptBox], 
-    "\"(\"", 
-    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
-     "RowWithSeparators"], "\")\"", "\" = \"", 
-    TagBox[
-     RowBox[{"(", "\[NoBreak]", 
-       GridBox[{{
-          RowBox[{
-            RowBox[{"-", "2"}], " ", "U"}], "0", "0", "0"}, {"0", 
-          FractionBox["2", "U"], "0", "0"}, {"0", "0", 
-          RowBox[{"2", " ", 
-            TemplateBox[{
-              InterpretationBox[
-               
-               RowBox[{
-                "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                 "\" \""}], 
-               SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-              "2"}, "Superscript", SyntaxForm -> SuperscriptBox]}], "0"}, {
-         "0", "0", "0", 
-          RowBox[{"2", " ", 
-            TemplateBox[{
-              InterpretationBox[
-               
-               RowBox[{
-                "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                 "\" \""}], 
-               SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-              RowBox[{
-                RowBox[{"-", "1"}], "+", "B"}]}, "Superscript", SyntaxForm -> 
-             SuperscriptBox], " ", 
-            RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}]}]}}, RowSpacings -> 1, 
-        ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> 
-        Center], "\[NoBreak]", ")"}], 
-     Function[BoxForm`e$, 
-      MatrixForm[BoxForm`e$]]]},
-   "RowDefault"], "DisplayFormula",
-  StripOnInput->False]], "Output",
- Editable->False,
- CellLabelStyle->Directive["CellLabel", Smaller, 
-   RGBColor[0, 0, 1]],
- CellChangeTimes->{3.928667667067504*^9},
- CellLabel->"OGRe:",ExpressionUUID->"45f3a9e7-4b55-41d0-9a4f-6f0503be862c"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+ CellLabel->"In[84]:=",ExpressionUUID->"16c53d30-d29f-4895-aee5-7a68030ca203"],
 
 Cell[BoxData[
  RowBox[{"TList", "@", 
   RowBox[{"TCalcChristoffel", "[", "\"\<anz\>\"", "]"}]}]], "Input",
  CellChangeTimes->{{3.928664666869647*^9, 3.928664685369111*^9}, {
-  3.9286660269638023`*^9, 3.928666042067299*^9}},
- CellLabel->
-  "In[392]:=",ExpressionUUID->"d53e102d-d804-454a-abc2-7736849d2ad2"],
-
-Cell[BoxData[
- StyleBox[
-  TagBox[GridBox[{
-     {
-      TemplateBox[{"\"anzChristoffel\"", "\":\""},
-       "RowDefault"]},
-     {
-      TagBox[GridBox[{
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                "\"t\"", "\"r\""}, "RowDefault"], 
-              TemplateBox[{"\"t\"", 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                "\"r\"", "\"t\""}, "RowDefault"], 
-              TemplateBox[{"\"t\"", 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"\[CapitalGamma]\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  "\"r\"", "\"r\""}, "RowDefault"], 
-                TemplateBox[{"\"r\"", 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           TemplateBox[{"Inactive", "U", "r"},
-            "InactiveD"], 
-           RowBox[{"2", " ", "U"}]]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                "\"t\"", "\"t\""}, "RowDefault"], 
-              TemplateBox[{"\"r\"", 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           RowBox[{"U", " ", 
-            TemplateBox[{"Inactive", "U", "r"},
-             "InactiveD"]}], "2"]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                "\"\[Theta]\"", "\"\[Theta]\""}, "RowDefault"], 
-              TemplateBox[{"\"r\"", 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", "R"}], " ", "U", " ", 
-           TemplateBox[{"Inactive", "R", "r"},
-            "InactiveD"]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                "\"\[Alpha]\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{"\"r\"", 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", 
-            FractionBox["1", "2"]}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             RowBox[{
-               RowBox[{"-", "2"}], "+", "B"}]},
-            "Superscript"], " ", "U", " ", 
-           RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], " ", 
-           TemplateBox[{"Inactive", "R", "r"},
-            "InactiveD"]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"r\"", "\"\[Theta]\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Theta]\"", 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"\[Theta]\"", "\"r\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Theta]\"", 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           TemplateBox[{"Inactive", "R", "r"},
-            "InactiveD"], "R"]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"r\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Alpha]\"", 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"\[Alpha]\"", "\"r\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Alpha]\"", 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           RowBox[{
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-            TemplateBox[{"Inactive", "R", "r"},
-             "InactiveD"]}], 
-           RowBox[{"2", " ", "R"}]]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[CapitalGamma]\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"\[Alpha]\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Alpha]\"", 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           TemplateBox[{"Inactive", 
-             RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], "\[Alpha]"},
-            "InactiveD"], 
-           RowBox[{"2", " ", 
-            RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}]}]]}
-        },
-        AutoDelete->False,
-        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
-        GridBoxItemSize->{
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-       "Grid"]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"], "DisplayFormula",
-  StripOnInput->False]], "Output",
- Editable->False,
- CellLabelStyle->Directive["CellLabel", Smaller, 
-   RGBColor[0, 0, 1]],
- CellChangeTimes->{3.928667667414854*^9},
- CellLabel->"OGRe:",ExpressionUUID->"f3beae2f-e72f-423f-91e6-2321e89485b0"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+  3.928666026963802*^9, 3.928666042067299*^9}},
+ CellLabel->"In[85]:=",ExpressionUUID->"d53e102d-d804-454a-abc2-7736849d2ad2"],
 
 Cell[BoxData[
  RowBox[{"TList", "@", 
   RowBox[{"TCalcRiemannTensor", "[", "\"\<anz\>\"", "]"}]}]], "Input",
  CellChangeTimes->{{3.9286647930238533`*^9, 3.9286648141771717`*^9}, {
   3.9286648641043253`*^9, 3.928664866520213*^9}},
- CellLabel->
-  "In[393]:=",ExpressionUUID->"c5c42649-b3aa-4695-897c-0e5a624346f6"],
-
-Cell[BoxData[
- StyleBox[
-  TagBox[GridBox[{
-     {
-      TemplateBox[{"\"anzRiemann\"", "\":\""},
-       "RowDefault"]},
-     {
-      TagBox[GridBox[{
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                "\"r\"", "\"t\"", "\"r\""}, "RowDefault"], 
-              TemplateBox[{"\"t\"", 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                  "\"r\"", "\"r\"", "\"t\""}, "RowDefault"], 
-                TemplateBox[{"\"t\"", 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{"-", 
-           FractionBox[
-            TemplateBox[{"Inactive", "U", 
-              TemplateBox[{
-                InterpretationBox[
-                 
-                 RowBox[{
-                  "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                   "\" \""}], 
-                 SequenceForm[" ", $CellContext`r, " "], Editable -> False], 
-                "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
-             "InactiveD"], 
-            RowBox[{"2", " ", "U"}]]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                "\"\[Theta]\"", "\"t\"", "\"\[Theta]\""}, "RowDefault"], 
-              TemplateBox[{"\"t\"", 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                  "\"\[Theta]\"", "\"\[Theta]\"", "\"t\""}, "RowDefault"], 
-                TemplateBox[{"\"t\"", 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", 
-            FractionBox["1", "2"]}], " ", "R", " ", 
-           TemplateBox[{"Inactive", "R", "r"},
-            "InactiveD"], " ", 
-           TemplateBox[{"Inactive", "U", "r"},
-            "InactiveD"]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                "\"\[Alpha]\"", "\"t\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{"\"t\"", 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                  "\"\[Alpha]\"", "\"\[Alpha]\"", "\"t\""}, "RowDefault"], 
-                TemplateBox[{"\"t\"", 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", 
-            FractionBox["1", "4"]}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             RowBox[{
-               RowBox[{"-", "2"}], "+", "B"}]},
-            "Superscript"], " ", 
-           RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], " ", 
-           TemplateBox[{"Inactive", "R", "r"},
-            "InactiveD"], " ", 
-           TemplateBox[{"Inactive", "U", "r"},
-            "InactiveD"]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                "\"t\"", "\"t\"", "\"r\""}, "RowDefault"], 
-              TemplateBox[{"\"r\"", 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  "\"t\"", "\"r\"", "\"t\""}, "RowDefault"], 
-                TemplateBox[{"\"r\"", 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", 
-            FractionBox["1", "2"]}], " ", "U", " ", 
-           TemplateBox[{"Inactive", "U", 
-             TemplateBox[{
-               InterpretationBox[
-                
-                RowBox[{
-                 "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                  "\" \""}], 
-                SequenceForm[" ", $CellContext`r, " "], Editable -> False], 
-               "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
-            "InactiveD"]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                "\"\[Theta]\"", "\"r\"", "\"\[Theta]\""}, "RowDefault"], 
-              TemplateBox[{"\"r\"", 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  "\"\[Theta]\"", "\"\[Theta]\"", "\"r\""}, "RowDefault"], 
-                TemplateBox[{"\"r\"", 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", 
-            FractionBox["1", "2"]}], " ", "R", " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"2", " ", "U", " ", 
-              TemplateBox[{"Inactive", "R", 
-                TemplateBox[{
-                  InterpretationBox[
-                   
-                   RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                   SequenceForm[" ", $CellContext`r, " "], Editable -> False],
-                   "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
-               "InactiveD"]}], "+", 
-             RowBox[{
-              TemplateBox[{"Inactive", "R", "r"},
-               "InactiveD"], " ", 
-              TemplateBox[{"Inactive", "U", "r"},
-               "InactiveD"]}]}], ")"}]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                "\"\[Alpha]\"", "\"r\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{"\"r\"", 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  "\"\[Alpha]\"", "\"\[Alpha]\"", "\"r\""}, "RowDefault"], 
-                TemplateBox[{"\"r\"", 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", 
-            FractionBox["1", "4"]}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             RowBox[{
-               RowBox[{"-", "3"}], "+", "B"}]},
-            "Superscript"], " ", 
-           RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"U", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"-", "3"}], "+", "B"}], ")"}], " ", 
-                 TemplateBox[{
-                   InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"},
-                  "Superscript"]}], "+", 
-                RowBox[{"2", " ", "R", " ", 
-                 TemplateBox[{"Inactive", "R", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
-                  "InactiveD"]}]}], ")"}]}], "+", 
-             RowBox[{"R", " ", 
-              TemplateBox[{"Inactive", "R", "r"},
-               "InactiveD"], " ", 
-              TemplateBox[{"Inactive", "U", "r"},
-               "InactiveD"]}]}], ")"}]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"t\"", "\"t\"", "\"\[Theta]\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Theta]\"", 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], "\"t\"", "\"\[Theta]\"", "\"t\""}, "RowDefault"], 
-                TemplateBox[{"\"\[Theta]\"", 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{"-", 
-           FractionBox[
-            RowBox[{"U", " ", 
-             TemplateBox[{"Inactive", "R", "r"},
-              "InactiveD"], " ", 
-             TemplateBox[{"Inactive", "U", "r"},
-              "InactiveD"]}], 
-            RowBox[{"2", " ", "R"}]]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"r\"", "\"r\"", "\"\[Theta]\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Theta]\"", 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], "\"r\"", "\"\[Theta]\"", "\"r\""}, "RowDefault"], 
-                TemplateBox[{"\"\[Theta]\"", 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           RowBox[{
-            RowBox[{"2", " ", "U", " ", 
-             TemplateBox[{"Inactive", "R", 
-               TemplateBox[{
-                 InterpretationBox[
-                  
-                  RowBox[{
-                   "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                  SequenceForm[" ", $CellContext`r, " "], Editable -> False], 
-                 "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
-              "InactiveD"]}], "+", 
-            RowBox[{
-             TemplateBox[{"Inactive", "R", "r"},
-              "InactiveD"], " ", 
-             TemplateBox[{"Inactive", "U", "r"},
-              "InactiveD"]}]}], 
-           RowBox[{"2", " ", "R", " ", "U"}]]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"\[Alpha]\"", "\"\[Theta]\"", "\"\[Alpha]\""}, 
-               "RowDefault"], 
-              TemplateBox[{"\"\[Theta]\"", 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], "\"\[Alpha]\"", "\"\[Alpha]\"", "\"\[Theta]\""}, 
-                 "RowDefault"], 
-                TemplateBox[{"\"\[Theta]\"", 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", 
-            FractionBox["1", "2"]}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             RowBox[{
-               RowBox[{"-", "3"}], "+", "B"}]},
-            "Superscript"], " ", "U", " ", 
-           RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], " ", 
-           TemplateBox[{
-             InterpretationBox[
-              RowBox[{"\" \"", "\[InvisibleSpace]", 
-                TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                "\[InvisibleSpace]", "\" \""}], 
-              SequenceForm[" ", 
-               Inactive[D][$CellContext`R, $CellContext`r], " "], Editable -> 
-              False], "2"},
-            "Superscript"]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"t\"", "\"t\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Alpha]\"", 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], "\"t\"", "\"\[Alpha]\"", "\"t\""}, "RowDefault"], 
-                TemplateBox[{"\"\[Alpha]\"", 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{"-", 
-           FractionBox[
-            RowBox[{
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", "U", " ", 
-             TemplateBox[{"Inactive", "R", "r"},
-              "InactiveD"], " ", 
-             TemplateBox[{"Inactive", "U", "r"},
-              "InactiveD"]}], 
-            RowBox[{"4", " ", "R"}]]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"r\"", "\"r\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{"\"\[Alpha]\"", 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], "\"r\"", "\"\[Alpha]\"", "\"r\""}, "RowDefault"], 
-                TemplateBox[{"\"\[Alpha]\"", 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-                 "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           RowBox[{
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"U", " ", 
-               RowBox[{"(", 
-                RowBox[{
-                 RowBox[{
-                  RowBox[{"(", 
-                   RowBox[{
-                    RowBox[{"-", "3"}], "+", "B"}], ")"}], " ", 
-                  TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"},
-                   "Superscript"]}], "+", 
-                 RowBox[{"2", " ", "R", " ", 
-                  TemplateBox[{"Inactive", "R", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
-                   "InactiveD"]}]}], ")"}]}], "+", 
-              RowBox[{"R", " ", 
-               TemplateBox[{"Inactive", "R", "r"},
-                "InactiveD"], " ", 
-               TemplateBox[{"Inactive", "U", "r"},
-                "InactiveD"]}]}], ")"}]}], 
-           RowBox[{"4", " ", 
-            TemplateBox[{
-              InterpretationBox[
-               
-               RowBox[{
-                "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                 "\" \""}], 
-               SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-              "2"},
-             "Superscript"], " ", "U"}]]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False],
-                 "\"\[Theta]\"", "\"\[Theta]\"", "\"\[Alpha]\""}, 
-               "RowDefault"], 
-              TemplateBox[{"\"\[Alpha]\"", 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox], 
-            RowBox[{"-", 
-              TemplateBox[{"\"R\"", 
-                TemplateBox[{
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], "\"\[Theta]\"", "\"\[Alpha]\"", "\"\[Theta]\""}, 
-                 "RowDefault"], 
-                TemplateBox[{"\"\[Alpha]\"", 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                   False], 
-                  StyleBox[
-                  "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                   False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-               SubsuperscriptBox]}]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           FractionBox["1", "2"], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", "U", " ", 
-           TemplateBox[{
-             InterpretationBox[
-              RowBox[{"\" \"", "\[InvisibleSpace]", 
-                TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                "\[InvisibleSpace]", "\" \""}], 
-              SequenceForm[" ", 
-               Inactive[D][$CellContext`R, $CellContext`r], " "], Editable -> 
-              False], "2"},
-            "Superscript"]}]}
-        },
-        AutoDelete->False,
-        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
-        GridBoxItemSize->{
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-       "Grid"]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"], "DisplayFormula",
-  StripOnInput->False]], "Output",
- Editable->False,
- CellLabelStyle->Directive["CellLabel", Smaller, 
-   RGBColor[0, 0, 1]],
- CellChangeTimes->{3.928667668450424*^9},
- CellLabel->"OGRe:",ExpressionUUID->"8c96e3fd-5161-46ab-b27e-86bb2cc2a594"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+ CellLabel->"In[86]:=",ExpressionUUID->"c5c42649-b3aa-4695-897c-0e5a624346f6"],
 
 Cell[BoxData[
  RowBox[{"TShow", "@", 
@@ -1404,232 +220,12 @@ Cell[BoxData[
    RowBox[{"\"\<Kretschmann\>\"", ",", 
     RowBox[{
      RowBox[{"\"\<anzRiemann\>\"", "[", "\"\<abcd\>\"", "]"}], ".", 
-     RowBox[{"\"\<anzRiemann\>\"", "[", "\"\<abcd\>\"", "]"}]}], ",", 
-    "\"\<K\>\""}], "]"}]}]], "Input",
- CellChangeTimes->{{3.9286649001024446`*^9, 3.928664918183185*^9}},
- CellLabel->
-  "In[394]:=",ExpressionUUID->"8ba8a4dd-6467-456d-b094-025a438fcd22"],
-
-Cell[BoxData[
- TemplateBox[{
-  "TMessage", "WarningOverwrite", 
-   "\"Overwriting the tensor \\\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Kretschmann\\\\\
-\\\"\\\"}]\\)\\\".\"", 2, 394, 104, 19435229831241774661, "Local", 
-   "OGRe`TMessage"},
-  "MessageTemplate2"]], "Message", "MSG",
- CellChangeTimes->{3.928667668546781*^9},
- CellLabel->
-  "During evaluation of \
-In[394]:=",ExpressionUUID->"653feb88-6e03-457d-a3fc-891e8eca3e8d"],
-
-Cell[BoxData[
- StyleBox[
-  TemplateBox[{"\"Kretschmann\"", "\":   \"", 
-    TemplateBox[{"\"K\"", 
-      TemplateBox[{}, "RowDefault"], 
-      TemplateBox[{}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-     SubsuperscriptBox], "\"(\"", 
-    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
-     "RowWithSeparators"], "\")\"", "\" = \"", 
-    RowBox[{
-      FractionBox["1", "4"], " ", 
-      RowBox[{"(", 
-        RowBox[{
-          FractionBox[
-           RowBox[{
-             TemplateBox[{
-               InterpretationBox[
-                RowBox[{"\" \"", "\[InvisibleSpace]", 
-                  RowBox[{
-                    RowBox[{"-", "1"}], "+", "B"}], "\[InvisibleSpace]", 
-                  "\" \""}], 
-                SequenceForm[" ", -1 + $CellContext`B, " "], Editable -> 
-                False], "2"}, "Superscript", SyntaxForm -> SuperscriptBox], 
-             " ", 
-             RowBox[{"(", 
-               RowBox[{"13", "+", 
-                 RowBox[{
-                   RowBox[{"(", 
-                    RowBox[{
-                    RowBox[{"-", "6"}], "+", "B"}], ")"}], " ", "B"}]}], 
-               ")"}], " ", 
-             TemplateBox[{
-               InterpretationBox[
-                
-                RowBox[{
-                 "\" \"", "\[InvisibleSpace]", "U", "\[InvisibleSpace]", 
-                  "\" \""}], 
-                SequenceForm[" ", $CellContext`U, " "], Editable -> False], 
-               "2"}, "Superscript", SyntaxForm -> SuperscriptBox], " ", 
-             TemplateBox[{
-               InterpretationBox[
-                RowBox[{"\" \"", "\[InvisibleSpace]", 
-                  TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                  "\[InvisibleSpace]", "\" \""}], 
-                SequenceForm[" ", 
-                 Inactive[D][$CellContext`R, $CellContext`r], " "], Editable -> 
-                False], "4"}, "Superscript", SyntaxForm -> SuperscriptBox]}], 
-           
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             "4"}, "Superscript", SyntaxForm -> SuperscriptBox]], "+", 
-          FractionBox[
-           RowBox[{"2", " ", 
-             RowBox[{"(", 
-               RowBox[{
-                 RowBox[{"-", "3"}], "+", "B"}], ")"}], " ", 
-             TemplateBox[{
-               InterpretationBox[
-                RowBox[{"\" \"", "\[InvisibleSpace]", 
-                  RowBox[{
-                    RowBox[{"-", "1"}], "+", "B"}], "\[InvisibleSpace]", 
-                  "\" \""}], 
-                SequenceForm[" ", -1 + $CellContext`B, " "], Editable -> 
-                False], "2"}, "Superscript", SyntaxForm -> SuperscriptBox], 
-             " ", "U", " ", 
-             TemplateBox[{
-               InterpretationBox[
-                RowBox[{"\" \"", "\[InvisibleSpace]", 
-                  TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                  "\[InvisibleSpace]", "\" \""}], 
-                SequenceForm[" ", 
-                 Inactive[D][$CellContext`R, $CellContext`r], " "], Editable -> 
-                False], "2"}, "Superscript", SyntaxForm -> SuperscriptBox], 
-             " ", 
-             RowBox[{"(", 
-               RowBox[{
-                 RowBox[{"2", " ", "U", " ", 
-                   TemplateBox[{"Inactive", "R", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]}, "InactiveD"]}], "+", 
-                 RowBox[{
-                   TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], " ", 
-                   TemplateBox[{"Inactive", "U", "r"}, "InactiveD"]}]}], 
-               ")"}]}], 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             "3"}, "Superscript", SyntaxForm -> SuperscriptBox]], "+", 
-          FractionBox[
-           RowBox[{"2", " ", 
-             RowBox[{"(", 
-               RowBox[{"5", "+", 
-                 RowBox[{
-                   RowBox[{"(", 
-                    RowBox[{
-                    RowBox[{"-", "2"}], "+", "B"}], ")"}], " ", "B"}]}], 
-               ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{
-                 RowBox[{"2", " ", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "U", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`U, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox], " ", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{"\" \"", "\[InvisibleSpace]", "r", 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]}, "InactiveD"], "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r^2], " "], 
-                    Editable -> False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]}], "+", 
-                 RowBox[{"2", " ", "U", " ", 
-                   TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], " ", 
-                   TemplateBox[{"Inactive", "R", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]}, "InactiveD"], " ", 
-                   TemplateBox[{"Inactive", "U", "r"}, "InactiveD"]}], "+", 
-                 RowBox[{
-                   TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox], " ", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "U", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`U, $CellContext`r], " "], 
-                    Editable -> False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]}]}], ")"}]}], 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             "2"}, "Superscript", SyntaxForm -> SuperscriptBox]], "+", 
-          RowBox[{"4", " ", 
-            TemplateBox[{
-              InterpretationBox[
-               RowBox[{"\" \"", "\[InvisibleSpace]", 
-                 TemplateBox[{"Inactive", "U", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]}, "InactiveD"], "\[InvisibleSpace]", 
-                 "\" \""}], 
-               SequenceForm[" ", 
-                Inactive[D][$CellContext`U, $CellContext`r^2], " "], Editable -> 
-               False], "2"}, "Superscript", SyntaxForm -> SuperscriptBox]}]}],
-         ")"}]}]},
-   "RowDefault"], "DisplayFormula",
-  StripOnInput->False]], "Output",
- Editable->False,
- CellLabelStyle->Directive["CellLabel", Smaller, 
-   RGBColor[0, 0, 1]],
- CellChangeTimes->{3.928667672655098*^9},
- CellLabel->"OGRe:",ExpressionUUID->"412cf233-63ad-4984-978a-34c676ba5329"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+     RowBox[{"\"\<anzRiemann\>\"", "[", "\"\<abcd\>\"", "]"}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9286649001024446`*^9, 3.928664918183185*^9}, {
+  3.928745436242968*^9, 
+  3.9287454371055813`*^9}},ExpressionUUID->"8ba8a4dd-6467-456d-b094-\
+025a438fcd22"],
 
 Cell[BoxData[
  RowBox[{"TList", "@", 
@@ -1637,264 +233,7 @@ Cell[BoxData[
    RowBox[{"TCalcRicciTensor", "[", "\"\<anz\>\"", "]"}], "Input"]}]], "Input",\
 
  CellChangeTimes->{{3.928664929551366*^9, 3.928664972691142*^9}},
- CellLabel->
-  "In[395]:=",ExpressionUUID->"a21ab60f-ed4b-457e-bb95-0fc37c90c113"],
-
-Cell[BoxData[
- StyleBox[
-  TagBox[GridBox[{
-     {
-      TemplateBox[{"\"anzRicciTensor\"", "\":\""},
-       "RowDefault"]},
-     {
-      TagBox[GridBox[{
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{"\"t\"", "\"t\""}, "RowDefault"], 
-              TemplateBox[{
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           RowBox[{"U", " ", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"(", 
-                RowBox[{"1", "+", "B"}], ")"}], " ", 
-               TemplateBox[{"Inactive", "R", "r"},
-                "InactiveD"], " ", 
-               TemplateBox[{"Inactive", "U", "r"},
-                "InactiveD"]}], "+", 
-              RowBox[{"2", " ", "R", " ", 
-               TemplateBox[{"Inactive", "U", 
-                 TemplateBox[{
-                   InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                  SuperscriptBox]},
-                "InactiveD"]}]}], ")"}]}], 
-           RowBox[{"4", " ", "R"}]]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{"\"r\"", "\"r\""}, "RowDefault"], 
-              TemplateBox[{
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{"-", 
-           FractionBox[
-            RowBox[{
-             RowBox[{"U", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"-", "3"}], "+", "B"}], ")"}], " ", 
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-                 TemplateBox[{
-                   InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"},
-                  "Superscript"]}], "+", 
-                RowBox[{"2", " ", 
-                 RowBox[{"(", 
-                  RowBox[{"1", "+", "B"}], ")"}], " ", "R", " ", 
-                 TemplateBox[{"Inactive", "R", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
-                  "InactiveD"]}]}], ")"}]}], "+", 
-             RowBox[{"R", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{"1", "+", "B"}], ")"}], " ", 
-                 TemplateBox[{"Inactive", "R", "r"},
-                  "InactiveD"], " ", 
-                 TemplateBox[{"Inactive", "U", "r"},
-                  "InactiveD"]}], "+", 
-                RowBox[{"2", " ", "R", " ", 
-                 TemplateBox[{"Inactive", "U", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
-                  "InactiveD"]}]}], ")"}]}]}], 
-            RowBox[{"4", " ", 
-             TemplateBox[{
-               InterpretationBox[
-                
-                RowBox[{
-                 "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                  "\" \""}], 
-                SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-               "2"},
-              "Superscript"], " ", "U"}]]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{"\"\[Theta]\"", "\"\[Theta]\""}, "RowDefault"], 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{
-            RowBox[{"-", 
-             FractionBox["1", "2"]}], " ", "U", " ", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"(", 
-                RowBox[{
-                 RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-               TemplateBox[{
-                 InterpretationBox[
-                  RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                  SequenceForm[" ", 
-                   Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                  Editable -> False], "2"},
-                "Superscript"]}], "+", 
-              RowBox[{"2", " ", "R", " ", 
-               TemplateBox[{"Inactive", "R", 
-                 TemplateBox[{
-                   InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                  SuperscriptBox]},
-                "InactiveD"]}]}], ")"}]}], "-", 
-           RowBox[{"R", " ", 
-            TemplateBox[{"Inactive", "R", "r"},
-             "InactiveD"], " ", 
-            TemplateBox[{"Inactive", "U", "r"},
-             "InactiveD"]}]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"R\"", 
-              TemplateBox[{"\"\[Alpha]\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           RowBox[{"-", 
-            FractionBox["1", "4"]}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             RowBox[{
-               RowBox[{"-", "3"}], "+", "B"}]},
-            "Superscript"], " ", 
-           RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"U", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-                 TemplateBox[{
-                   InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"},
-                  "Superscript"]}], "+", 
-                RowBox[{"2", " ", "R", " ", 
-                 TemplateBox[{"Inactive", "R", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
-                  "InactiveD"]}]}], ")"}]}], "+", 
-             RowBox[{"2", " ", "R", " ", 
-              TemplateBox[{"Inactive", "R", "r"},
-               "InactiveD"], " ", 
-              TemplateBox[{"Inactive", "U", "r"},
-               "InactiveD"]}]}], ")"}]}]}
-        },
-        AutoDelete->False,
-        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
-        GridBoxItemSize->{
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-       "Grid"]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"], "DisplayFormula",
-  StripOnInput->False]], "Output",
- Editable->False,
- CellLabelStyle->Directive["CellLabel", Smaller, 
-   RGBColor[0, 0, 1]],
- CellChangeTimes->{3.928667673708474*^9},
- CellLabel->"OGRe:",ExpressionUUID->"f0dc707b-4041-48d9-8d4b-7f328436f473"]
-}, Open  ]],
-
-Cell[CellGroupData[{
+ CellLabel->"In[88]:=",ExpressionUUID->"a21ab60f-ed4b-457e-bb95-0fc37c90c113"],
 
 Cell[BoxData[
  RowBox[{"TShow", "@", 
@@ -1903,91 +242,7 @@ Cell[BoxData[
    StyleBox["\"\<anz\>\"", "Input"], 
    StyleBox["]", "Input"]}]}]], "Input",
  CellChangeTimes->{{3.928664954696445*^9, 3.928664955623143*^9}},
- CellLabel->
-  "In[396]:=",ExpressionUUID->"78a8ef90-f273-4295-99ba-d756d3c1c212"],
-
-Cell[BoxData[
- StyleBox[
-  TemplateBox[{"\"anzRicciScalar\"", "\":   \"", 
-    TemplateBox[{"\"R\"", 
-      TemplateBox[{}, "RowDefault"], 
-      TemplateBox[{}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-     SubsuperscriptBox], "\"(\"", 
-    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
-     "RowWithSeparators"], "\")\"", "\" = \"", 
-    RowBox[{"-", 
-      FractionBox[
-       RowBox[{
-         RowBox[{"U", " ", 
-           RowBox[{"(", 
-             RowBox[{
-               RowBox[{
-                 TemplateBox[{
-                   InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    RowBox[{
-                    RowBox[{"-", "1"}], "+", "B"}], "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", -1 + $CellContext`B, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                  SuperscriptBox], " ", 
-                 TemplateBox[{
-                   InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"}, "Superscript", SyntaxForm -> 
-                  SuperscriptBox]}], "+", 
-               RowBox[{"2", " ", 
-                 RowBox[{"(", 
-                   RowBox[{"1", "+", "B"}], ")"}], " ", "R", " ", 
-                 TemplateBox[{"Inactive", "R", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]}, "InactiveD"]}]}], ")"}]}], "+", 
-         RowBox[{"2", " ", "R", " ", 
-           RowBox[{"(", 
-             RowBox[{
-               RowBox[{
-                 RowBox[{"(", 
-                   RowBox[{"1", "+", "B"}], ")"}], " ", 
-                 TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], " ", 
-                 TemplateBox[{"Inactive", "U", "r"}, "InactiveD"]}], "+", 
-               RowBox[{"R", " ", 
-                 TemplateBox[{"Inactive", "U", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]}, "InactiveD"]}]}], ")"}]}]}], 
-       RowBox[{"2", " ", 
-         TemplateBox[{
-           InterpretationBox[
-            
-            RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-              "\" \""}], 
-            SequenceForm[" ", $CellContext`R, " "], Editable -> False], "2"}, 
-          "Superscript", SyntaxForm -> SuperscriptBox]}]]}]},
-   "RowDefault"], "DisplayFormula",
-  StripOnInput->False]], "Output",
- Editable->False,
- CellLabelStyle->Directive["CellLabel", Smaller, 
-   RGBColor[0, 0, 1]],
- CellChangeTimes->{3.9286676741399803`*^9},
- CellLabel->"OGRe:",ExpressionUUID->"5529cd61-00fd-47b6-9b22-0b3be7bb1b13"]
-}, Open  ]],
+ CellLabel->"In[89]:=",ExpressionUUID->"78a8ef90-f273-4295-99ba-d756d3c1c212"],
 
 Cell[CellGroupData[{
 
@@ -1996,9 +251,10 @@ Cell[BoxData[
   RowBox[{
    StyleBox["TCalcEinsteinTensor", "Input"], "[", "\"\<anz\>\"", 
    "]"}]}]], "Input",
- CellChangeTimes->{{3.928664985552278*^9, 3.928665001005103*^9}},
+ CellChangeTimes->{{3.928664985552278*^9, 3.928665001005103*^9}, 
+   3.928740390158897*^9},
  CellLabel->
-  "In[397]:=",ExpressionUUID->"0b4aaac2-ca2c-4850-bde4-dbf433844eae"],
+  "In[410]:=",ExpressionUUID->"0b4aaac2-ca2c-4850-bde4-dbf433844eae"],
 
 Cell[BoxData[
  StyleBox[
@@ -2029,37 +285,18 @@ Cell[BoxData[
                 RowBox[{"(", 
                  RowBox[{
                   RowBox[{
-                   TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
                     RowBox[{
-                    RowBox[{"-", "1"}], "+", "B"}], "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", -1 + $CellContext`B, " "], Editable -> 
-                    False], "2"},
-                    "Superscript"], " ", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"},
-                    "Superscript"]}], "+", 
+                    RowBox[{"-", "1"}], "+", "B"}], ")"}], "2"], " ", 
+                   SuperscriptBox[
+                    TemplateBox[{"Inactive", "R", "r"},
+                    "InactiveD"], "2"]}], "+", 
                   RowBox[{"2", " ", 
                    RowBox[{"(", 
                     RowBox[{"1", "+", "B"}], ")"}], " ", "R", " ", 
                    TemplateBox[{"Inactive", "R", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
+                    SuperscriptBox["r", "2"]},
                     "InactiveD"]}]}], ")"}]}], "+", 
                RowBox[{
                 RowBox[{"(", 
@@ -2069,15 +306,7 @@ Cell[BoxData[
                 TemplateBox[{"Inactive", "U", "r"},
                  "InactiveD"]}]}], ")"}]}], 
             RowBox[{"4", " ", 
-             TemplateBox[{
-               InterpretationBox[
-                
-                RowBox[{
-                 "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                  "\" \""}], 
-                SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-               "2"},
-              "Superscript"]}]]}]},
+             SuperscriptBox["R", "2"]}]]}]},
          {
           TemplateBox[{"=", "\"=\"", 
             TemplateBox[{"\"G\"", 
@@ -2108,15 +337,7 @@ Cell[BoxData[
                TemplateBox[{"Inactive", "U", "r"},
                 "InactiveD"]}]}], ")"}]}], 
            RowBox[{"4", " ", 
-            TemplateBox[{
-              InterpretationBox[
-               
-               RowBox[{
-                "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                 "\" \""}], 
-               SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-              "2"},
-             "Superscript"], " ", "U"}]]},
+            SuperscriptBox["R", "2"], " ", "U"}]]},
          {
           TemplateBox[{"=", "\"=\"", 
             TemplateBox[{"\"G\"", 
@@ -2146,26 +367,12 @@ Cell[BoxData[
                     RowBox[{"(", 
                     RowBox[{
                     RowBox[{"-", "3"}], "+", "B"}], ")"}], " ", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"},
-                    "Superscript"]}], "+", 
+                    SuperscriptBox[
+                    TemplateBox[{"Inactive", "R", "r"},
+                    "InactiveD"], "2"]}], "+", 
                    RowBox[{"2", " ", "R", " ", 
                     TemplateBox[{"Inactive", "R", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
+                    SuperscriptBox["r", "2"]},
                     "InactiveD"]}]}], ")"}]}], "+", 
                 RowBox[{"2", " ", "R", " ", 
                  TemplateBox[{"Inactive", "R", "r"},
@@ -2173,24 +380,9 @@ Cell[BoxData[
                  TemplateBox[{"Inactive", "U", "r"},
                   "InactiveD"]}]}], ")"}]}], "+", 
              RowBox[{"2", " ", 
-              TemplateBox[{
-                InterpretationBox[
-                 
-                 RowBox[{
-                  "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                   "\" \""}], 
-                 SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-                "2"},
-               "Superscript"], " ", 
+              SuperscriptBox["R", "2"], " ", 
               TemplateBox[{"Inactive", "U", 
-                TemplateBox[{
-                  InterpretationBox[
-                   
-                   RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                   SequenceForm[" ", $CellContext`r, " "], Editable -> False],
-                   "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
+                SuperscriptBox["r", "2"]},
                "InactiveD"]}]}], ")"}]}]},
          {
           TemplateBox[{"=", "\"=\"", 
@@ -2206,28 +398,15 @@ Cell[BoxData[
            "RowWithSeparators"], "\<\"=\"\>", 
           RowBox[{
            FractionBox["1", "2"], " ", 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             RowBox[{
-               RowBox[{"-", "2"}], "+", "B"}]},
-            "Superscript"], " ", 
+           SuperscriptBox["R", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "B"}]], " ", 
            RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], " ", 
            RowBox[{"(", 
             RowBox[{
              RowBox[{"2", " ", "U", " ", 
               TemplateBox[{"Inactive", "R", 
-                TemplateBox[{
-                  InterpretationBox[
-                   
-                   RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                   SequenceForm[" ", $CellContext`r, " "], Editable -> False],
-                   "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
+                SuperscriptBox["r", "2"]},
                "InactiveD"]}], "+", 
              RowBox[{"2", " ", 
               TemplateBox[{"Inactive", "R", "r"},
@@ -2236,14 +415,7 @@ Cell[BoxData[
                "InactiveD"]}], "+", 
              RowBox[{"R", " ", 
               TemplateBox[{"Inactive", "U", 
-                TemplateBox[{
-                  InterpretationBox[
-                   
-                   RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                   SequenceForm[" ", $CellContext`r, " "], Editable -> False],
-                   "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
+                SuperscriptBox["r", "2"]},
                "InactiveD"]}]}], ")"}]}]}
         },
         AutoDelete->False,
@@ -2260,8 +432,298 @@ Cell[BoxData[
  Editable->False,
  CellLabelStyle->Directive["CellLabel", Smaller, 
    RGBColor[0, 0, 1]],
- CellChangeTimes->{3.92866767431139*^9},
- CellLabel->"OGRe:",ExpressionUUID->"92b2465a-2559-4f41-afee-4a860d3857ba"]
+ CellChangeTimes->{3.928755457895873*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"6914e139-12e8-4626-bc1d-f9d61a981519"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EinsteinTensor", "=", 
+  RowBox[{"TGetComponents", "[", 
+   RowBox[{"\"\<anzEinstein\>\"", ",", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "1"}], ",", 
+      RowBox[{"-", "1"}]}], "}"}], ",", "\"\<mod-sph\>\""}], "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.928740640207224*^9, 3.928740718927082*^9}, {
+   3.92874125348211*^9, 3.928741256250876*^9}, 3.928742426988366*^9, 
+   3.928751127796377*^9, {3.928755410206415*^9, 3.92875541166396*^9}},
+ CellLabel->
+  "In[409]:=",ExpressionUUID->"716d30ec-da92-4804-b088-d6cf96cb914c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"U", "[", "r", "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"1", "+", "B"}], ")"}], " ", 
+           RowBox[{"R", "[", "r", "]"}], " ", 
+           RowBox[{
+            SuperscriptBox["R", "\[Prime]",
+             MultilineFunction->None], "[", "r", "]"}], " ", 
+           RowBox[{
+            SuperscriptBox["U", "\[Prime]",
+             MultilineFunction->None], "[", "r", "]"}]}], "+", 
+          RowBox[{
+           RowBox[{"U", "[", "r", "]"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "1"}], "+", "B"}], ")"}], "2"], " ", 
+              SuperscriptBox[
+               RowBox[{
+                SuperscriptBox["R", "\[Prime]",
+                 MultilineFunction->None], "[", "r", "]"}], "2"]}], "+", 
+             RowBox[{"2", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", "B"}], ")"}], " ", 
+              RowBox[{"R", "[", "r", "]"}], " ", 
+              RowBox[{
+               SuperscriptBox["R", "\[Prime]\[Prime]",
+                MultilineFunction->None], "[", "r", "]"}]}]}], ")"}]}]}], 
+         ")"}]}], 
+       RowBox[{"4", " ", 
+        SuperscriptBox[
+         RowBox[{"R", "[", "r", "]"}], "2"]}]]}], ",", "0", ",", "0", ",", 
+     "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     FractionBox[
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["R", "\[Prime]",
+         MultilineFunction->None], "[", "r", "]"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
+          RowBox[{"U", "[", "r", "]"}], " ", 
+          RowBox[{
+           SuperscriptBox["R", "\[Prime]",
+            MultilineFunction->None], "[", "r", "]"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "+", "B"}], ")"}], " ", 
+          RowBox[{"R", "[", "r", "]"}], " ", 
+          RowBox[{
+           SuperscriptBox["U", "\[Prime]",
+            MultilineFunction->None], "[", "r", "]"}]}]}], ")"}]}], 
+      RowBox[{"4", " ", 
+       SuperscriptBox[
+        RowBox[{"R", "[", "r", "]"}], "2"], " ", 
+       RowBox[{"U", "[", "r", "]"}]}]], ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", 
+     RowBox[{
+      FractionBox["1", "4"], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"2", " ", 
+            RowBox[{"R", "[", "r", "]"}], " ", 
+            RowBox[{
+             SuperscriptBox["R", "\[Prime]",
+              MultilineFunction->None], "[", "r", "]"}], " ", 
+            RowBox[{
+             SuperscriptBox["U", "\[Prime]",
+              MultilineFunction->None], "[", "r", "]"}]}], "+", 
+           RowBox[{
+            RowBox[{"U", "[", "r", "]"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "3"}], "+", "B"}], ")"}], " ", 
+               SuperscriptBox[
+                RowBox[{
+                 SuperscriptBox["R", "\[Prime]",
+                  MultilineFunction->None], "[", "r", "]"}], "2"]}], "+", 
+              RowBox[{"2", " ", 
+               RowBox[{"R", "[", "r", "]"}], " ", 
+               RowBox[{
+                SuperscriptBox["R", "\[Prime]\[Prime]",
+                 MultilineFunction->None], "[", "r", "]"}]}]}], ")"}]}]}], 
+          ")"}]}], "+", 
+        RowBox[{"2", " ", 
+         SuperscriptBox[
+          RowBox[{"R", "[", "r", "]"}], "2"], " ", 
+         RowBox[{
+          SuperscriptBox["U", "\[Prime]\[Prime]",
+           MultilineFunction->None], "[", "r", "]"}]}]}], ")"}]}], ",", "0"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0", ",", 
+     RowBox[{
+      FractionBox["1", "2"], " ", 
+      SuperscriptBox[
+       RowBox[{"R", "[", "r", "]"}], 
+       RowBox[{
+        RowBox[{"-", "2"}], "+", "B"}]], " ", 
+      RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2", " ", 
+         RowBox[{
+          SuperscriptBox["R", "\[Prime]",
+           MultilineFunction->None], "[", "r", "]"}], " ", 
+         RowBox[{
+          SuperscriptBox["U", "\[Prime]",
+           MultilineFunction->None], "[", "r", "]"}]}], "+", 
+        RowBox[{"2", " ", 
+         RowBox[{"U", "[", "r", "]"}], " ", 
+         RowBox[{
+          SuperscriptBox["R", "\[Prime]\[Prime]",
+           MultilineFunction->None], "[", "r", "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"R", "[", "r", "]"}], " ", 
+         RowBox[{
+          SuperscriptBox["U", "\[Prime]\[Prime]",
+           MultilineFunction->None], "[", "r", "]"}]}]}], ")"}]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.928751128656639*^9, 3.928755412171377*^9},
+ CellLabel->
+  "Out[409]=",ExpressionUUID->"9c0a42a7-0d44-496b-9bcd-de8ab2530171"]
+}, Open  ]],
+
+Cell["DEFINE SCALAR LAGRANGIAN", "Text",
+ CellChangeTimes->{{3.92874244228228*^9, 3.928742471002131*^9}, {
+  3.9287449008599033`*^9, 
+  3.9287449056938953`*^9}},ExpressionUUID->"af50357f-4644-41b0-9251-\
+0ca2b1088e8a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TShow", "@", 
+  RowBox[{"TNewTensor", "[", 
+   RowBox[{
+   "\"\<scalarField\>\"", ",", "\"\<anz\>\"", ",", " ", "\"\<mod-sph\>\"", 
+    ",", 
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"\[Phi]", "[", "r", "]"}], "}"}], ",", " ", "\"\<Phi\>\""}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9287398209079123`*^9, 3.928739842188496*^9}, {
+   3.9287398949122066`*^9, 3.92873994764815*^9}, {3.9287400559217443`*^9, 
+   3.928740057257215*^9}, 3.928740108554487*^9, {3.928740149815284*^9, 
+   3.928740205201915*^9}, {3.928741797676461*^9, 3.928741798492736*^9}},
+ CellLabel->
+  "In[203]:=",ExpressionUUID->"2d6d4136-c9b1-442d-bb08-019cda818f8b"],
+
+Cell[BoxData[
+ StyleBox[
+  TemplateBox[{"\"scalarField\"", "\":   \"", 
+    TemplateBox[{"\"Phi\"", 
+      TemplateBox[{}, "RowDefault"], 
+      TemplateBox[{}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
+     SubsuperscriptBox], "\"(\"", 
+    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
+     "RowWithSeparators"], "\")\"", "\" = \"", "\[Phi]"},
+   "RowDefault"], "DisplayFormula",
+  StripOnInput->False]], "Output",
+ Editable->False,
+ CellLabelStyle->Directive["CellLabel", Smaller, 
+   RGBColor[0, 0, 1]],
+ CellChangeTimes->{3.9287452113667383`*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"78287317-8b96-4a3a-b3f4-5660ced846fe"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TShow", "@", 
+  RowBox[{"TNewTensor", "[", 
+   RowBox[{
+   "\"\<potential\>\"", ",", "\"\<anz\>\"", ",", "\"\<mod-sph\>\"", ",", 
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"V", "[", "\[Phi]", "]"}], "}"}], ",", "\"\<V\>\""}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9287478003512993`*^9, 3.928747835813839*^9}},
+ CellLabel->
+  "In[272]:=",ExpressionUUID->"e87eed89-fa6a-4da0-b1b2-8ec821256ed9"],
+
+Cell[BoxData[
+ StyleBox[
+  TemplateBox[{"\"potential\"", "\":   \"", 
+    TemplateBox[{"\"V\"", 
+      TemplateBox[{}, "RowDefault"], 
+      TemplateBox[{}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
+     SubsuperscriptBox], "\"(\"", 
+    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
+     "RowWithSeparators"], "\")\"", "\" = \"", 
+    RowBox[{"V", "[", "\[Phi]", "]"}]},
+   "RowDefault"], "DisplayFormula",
+  StripOnInput->False]], "Output",
+ Editable->False,
+ CellLabelStyle->Directive["CellLabel", Smaller, 
+   RGBColor[0, 0, 1]],
+ CellChangeTimes->{3.928747836709919*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"01f8c6a2-2a1f-4ffd-83b1-4b48a4fbe4f3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TShow", "@", 
+  RowBox[{"TCalc", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"TPartialD", "[", "\"\<c\>\"", "]"}], ".", 
+     RowBox[{"\"\<scalarField\>\"", "[", "\"\<\>\"", "]"}]}], ",", 
+    "\"\<dphi\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.928745285341464*^9, 3.928745288572138*^9}},
+ CellLabel->
+  "In[204]:=",ExpressionUUID->"d5482cbe-30f6-40b8-a49b-111f3313b6b3"],
+
+Cell[BoxData[
+ StyleBox[
+  TemplateBox[{"\"Result\"", "\":   \"", 
+    TemplateBox[{"\"dphi\"", 
+      TemplateBox[{"\"a\""}, "RowDefault"], 
+      TemplateBox[{
+        StyleBox["\"a\"", ShowContents -> False, StripOnInput -> False]}, 
+       "RowDefault"]}, "Subsuperscript", SyntaxForm -> SubsuperscriptBox], 
+    "\"(\"", 
+    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
+     "RowWithSeparators"], "\")\"", "\" = \"", 
+    TagBox[
+     RowBox[{"(", "\[NoBreak]", 
+       TagBox[
+        GridBox[{{"0"}, {
+           TemplateBox[{"Inactive", "\[Phi]", "r"}, "InactiveD"]}, {"0"}, {
+          "0"}}, RowSpacings -> 1, ColumnAlignments -> Center, 
+         ColumnAlignments -> Left], Column], "\[NoBreak]", ")"}], 
+     Function[BoxForm`e$, 
+      MatrixForm[BoxForm`e$]]]},
+   "RowDefault"], "DisplayFormula",
+  StripOnInput->False]], "Output",
+ Editable->False,
+ CellLabelStyle->Directive["CellLabel", Smaller, 
+   RGBColor[0, 0, 1]],
+ CellChangeTimes->{3.928745211561499*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"d3833d91-7a37-4cd2-a57a-2d549a250f68"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2270,24 +732,14 @@ Cell[BoxData[
  RowBox[{"TList", "@", 
   RowBox[{"TCalc", "[", 
    RowBox[{
-    RowBox[{"\"\<anzEinstein\>\"", "[", "\"\<ab\>\"", "]"}], "=", 
-    RowBox[{"\"\<anzEinstein\>\"", "[", "\"\<ab\>\"", "]"}]}], 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.9286652217452383`*^9, 3.928665296478532*^9}},
+    RowBox[{
+     RowBox[{"TPartialD", "[", "\"\<a\>\"", "]"}], ".", 
+     RowBox[{"\"\<scalarField\>\"", "[", "\"\<\>\"", "]"}]}], ",", 
+    "\"\<dphi\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.928745309859441*^9, 3.928745311862775*^9}, {
+  3.928746170947709*^9, 3.928746171046825*^9}},
  CellLabel->
-  "In[398]:=",ExpressionUUID->"f594ae4c-1598-49c2-8356-ef00cc42ab88"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Set", "write", 
-   "\"Tag \\!\\(\\*RowBox[{\\\"String\\\"}]\\) in \\!\\(\\*RowBox[{\\\"\\\\\\\
-\"anzEinstein\\\\\\\"\\\", \\\"[\\\", \\\"\\\\\\\"ab\\\\\\\"\\\", \\\"]\\\"}]\
-\\) is Protected.\"", 2, 398, 105, 19435229831241774661, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.9286676743702993`*^9},
- CellLabel->
-  "During evaluation of \
-In[398]:=",ExpressionUUID->"45794234-0d80-4c5f-86e6-21b98f9ba42b"],
+  "In[229]:=",ExpressionUUID->"e9f69c0e-586b-4b6c-a15e-e1d4c78a0f96"],
 
 Cell[BoxData[
  StyleBox[
@@ -2299,241 +751,16 @@ Cell[BoxData[
       TagBox[GridBox[{
          {
           TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[DottedSquare]\"", 
-              TemplateBox[{"\"t\"", "\"t\""}, "RowDefault"], 
+            TemplateBox[{"\"dphi\"", 
+              TemplateBox[{"\"r\""}, "RowDefault"], 
               TemplateBox[{
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"t\"", ShowContents -> False, StripOnInput -> False]}, 
-               "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{"-", 
-           FractionBox[
-            RowBox[{"U", " ", 
-             RowBox[{"(", 
-              RowBox[{
-               RowBox[{"U", " ", 
-                RowBox[{"(", 
-                 RowBox[{
-                  RowBox[{
-                   TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    RowBox[{
-                    RowBox[{"-", "1"}], "+", "B"}], "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", -1 + $CellContext`B, " "], Editable -> 
-                    False], "2"},
-                    "Superscript"], " ", 
-                   TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"},
-                    "Superscript"]}], "+", 
-                  RowBox[{"2", " ", 
-                   RowBox[{"(", 
-                    RowBox[{"1", "+", "B"}], ")"}], " ", "R", " ", 
-                   TemplateBox[{"Inactive", "R", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
-                    "InactiveD"]}]}], ")"}]}], "+", 
-               RowBox[{
-                RowBox[{"(", 
-                 RowBox[{"1", "+", "B"}], ")"}], " ", "R", " ", 
-                TemplateBox[{"Inactive", "R", "r"},
-                 "InactiveD"], " ", 
-                TemplateBox[{"Inactive", "U", "r"},
-                 "InactiveD"]}]}], ")"}]}], 
-            RowBox[{"4", " ", 
-             TemplateBox[{
-               InterpretationBox[
-                
-                RowBox[{
-                 "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                  "\" \""}], 
-                SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-               "2"},
-              "Superscript"]}]]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[DottedSquare]\"", 
-              TemplateBox[{"\"r\"", "\"r\""}, "RowDefault"], 
-              TemplateBox[{
-                StyleBox[
-                "\"r\"", ShowContents -> False, StripOnInput -> False], 
                 StyleBox[
                 "\"r\"", ShowContents -> False, StripOnInput -> False]}, 
                "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
              SubsuperscriptBox]},
            "RowWithSeparators"], "\<\"=\"\>", 
-          FractionBox[
-           RowBox[{
-            TemplateBox[{"Inactive", "R", "r"},
-             "InactiveD"], " ", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"2", " ", 
-               RowBox[{"(", 
-                RowBox[{
-                 RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", "U", " ", 
-               TemplateBox[{"Inactive", "R", "r"},
-                "InactiveD"]}], "+", 
-              RowBox[{
-               RowBox[{"(", 
-                RowBox[{"1", "+", "B"}], ")"}], " ", "R", " ", 
-               TemplateBox[{"Inactive", "U", "r"},
-                "InactiveD"]}]}], ")"}]}], 
-           RowBox[{"4", " ", 
-            TemplateBox[{
-              InterpretationBox[
-               
-               RowBox[{
-                "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                 "\" \""}], 
-               SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-              "2"},
-             "Superscript"], " ", "U"}]]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[DottedSquare]\"", 
-              TemplateBox[{"\"\[Theta]\"", "\"\[Theta]\""}, "RowDefault"], 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Theta]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           FractionBox["1", "4"], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"-", "1"}], "+", "B"}], ")"}], " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"U", " ", 
-                 RowBox[{"(", 
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"(", 
-                    RowBox[{
-                    RowBox[{"-", "3"}], "+", "B"}], ")"}], " ", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    RowBox[{"\" \"", "\[InvisibleSpace]", 
-                    TemplateBox[{"Inactive", "R", "r"}, "InactiveD"], 
-                    "\[InvisibleSpace]", "\" \""}], 
-                    SequenceForm[" ", 
-                    Inactive[D][$CellContext`R, $CellContext`r], " "], 
-                    Editable -> False], "2"},
-                    "Superscript"]}], "+", 
-                   RowBox[{"2", " ", "R", " ", 
-                    TemplateBox[{"Inactive", "R", 
-                    TemplateBox[{
-                    InterpretationBox[
-                    
-                    RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                    SequenceForm[" ", $CellContext`r, " "], Editable -> 
-                    False], "2"}, "Superscript", SyntaxForm -> 
-                    SuperscriptBox]},
-                    "InactiveD"]}]}], ")"}]}], "+", 
-                RowBox[{"2", " ", "R", " ", 
-                 TemplateBox[{"Inactive", "R", "r"},
-                  "InactiveD"], " ", 
-                 TemplateBox[{"Inactive", "U", "r"},
-                  "InactiveD"]}]}], ")"}]}], "+", 
-             RowBox[{"2", " ", 
-              TemplateBox[{
-                InterpretationBox[
-                 
-                 RowBox[{
-                  "\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                   "\" \""}], 
-                 SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-                "2"},
-               "Superscript"], " ", 
-              TemplateBox[{"Inactive", "U", 
-                TemplateBox[{
-                  InterpretationBox[
-                   
-                   RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                   SequenceForm[" ", $CellContext`r, " "], Editable -> False],
-                   "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
-               "InactiveD"]}]}], ")"}]}]},
-         {
-          TemplateBox[{"=", "\"=\"", 
-            TemplateBox[{"\"\[DottedSquare]\"", 
-              TemplateBox[{"\"\[Alpha]\"", "\"\[Alpha]\""}, "RowDefault"], 
-              TemplateBox[{
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                "\"\[Alpha]\"", ShowContents -> False, StripOnInput -> 
-                 False]}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
-             SubsuperscriptBox]},
-           "RowWithSeparators"], "\<\"=\"\>", 
-          RowBox[{
-           FractionBox["1", "2"], " ", 
-           TemplateBox[{
-             InterpretationBox[
-              
-              RowBox[{"\" \"", "\[InvisibleSpace]", "R", "\[InvisibleSpace]", 
-                "\" \""}], 
-              SequenceForm[" ", $CellContext`R, " "], Editable -> False], 
-             RowBox[{
-               RowBox[{"-", "2"}], "+", "B"}]},
-            "Superscript"], " ", 
-           RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"2", " ", "U", " ", 
-              TemplateBox[{"Inactive", "R", 
-                TemplateBox[{
-                  InterpretationBox[
-                   
-                   RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                   SequenceForm[" ", $CellContext`r, " "], Editable -> False],
-                   "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
-               "InactiveD"]}], "+", 
-             RowBox[{"2", " ", 
-              TemplateBox[{"Inactive", "R", "r"},
-               "InactiveD"], " ", 
-              TemplateBox[{"Inactive", "U", "r"},
-               "InactiveD"]}], "+", 
-             RowBox[{"R", " ", 
-              TemplateBox[{"Inactive", "U", 
-                TemplateBox[{
-                  InterpretationBox[
-                   
-                   RowBox[{
-                    "\" \"", "\[InvisibleSpace]", "r", "\[InvisibleSpace]", 
-                    "\" \""}], 
-                   SequenceForm[" ", $CellContext`r, " "], Editable -> False],
-                   "2"}, "Superscript", SyntaxForm -> SuperscriptBox]},
-               "InactiveD"]}]}], ")"}]}]}
+          TemplateBox[{"Inactive", "\[Phi]", "r"},
+           "InactiveD"]}
         },
         AutoDelete->False,
         GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
@@ -2549,17 +776,319 @@ Cell[BoxData[
  Editable->False,
  CellLabelStyle->Directive["CellLabel", Smaller, 
    RGBColor[0, 0, 1]],
- CellChangeTimes->{3.928667674556489*^9},
- CellLabel->"OGRe:",ExpressionUUID->"5da4c438-4931-4d2f-b01d-476894198036"]
+ CellChangeTimes->{3.928746171888749*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"bac42c57-8afe-4f04-9710-5eae502d49bd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TShow", "[", 
+  RowBox[{"\"\<dphi\>\"", ",", 
+   RowBox[{"{", "1", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.92874640213258*^9, 3.9287464410974293`*^9}},
+ CellLabel->
+  "In[244]:=",ExpressionUUID->"07cc48b6-2813-4858-b141-55f81683194d"],
+
+Cell[BoxData[
+ StyleBox[
+  TemplateBox[{"\"dphi\"", "\":   \"", 
+    TemplateBox[{"\"E\"", 
+      TemplateBox[{
+        StyleBox["\"a\"", ShowContents -> False, StripOnInput -> False]}, 
+       "RowDefault"], 
+      TemplateBox[{"\"a\""}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
+     SubsuperscriptBox], "\"(\"", 
+    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
+     "RowWithSeparators"], "\")\"", "\" = \"", 
+    TagBox[
+     RowBox[{"(", "\[NoBreak]", 
+       TagBox[
+        GridBox[{{"0"}, {
+           RowBox[{"U", " ", 
+             TemplateBox[{"Inactive", "\[Phi]", "r"}, "InactiveD"]}]}, {
+          "0"}, {"0"}}, RowSpacings -> 1, ColumnAlignments -> Center, 
+         ColumnAlignments -> Left], Column], "\[NoBreak]", ")"}], 
+     Function[BoxForm`e$, 
+      MatrixForm[BoxForm`e$]]]},
+   "RowDefault"], "DisplayFormula",
+  StripOnInput->False]], "Output",
+ Editable->False,
+ CellLabelStyle->Directive["CellLabel", Smaller, 
+   RGBColor[0, 0, 1]],
+ CellChangeTimes->{3.928746441567071*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"0f7edc68-d05a-449c-851d-cf9ecb572597"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"TGetComponents", "@", 
+  RowBox[{"TCalc", "[", 
+   RowBox[{
+    RowBox[{"\"\<dphi\>\"", "[", "\"\<a\>\"", "]"}], ".", 
+    RowBox[{"\"\<dphi\>\"", "[", "\"\<a\>\"", "]"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"TShow", "@", 
+  RowBox[{"TNewTensor", "[", 
+   RowBox[{
+   "\"\<kineticScalar\>\"", ",", "\"\<anz\>\"", ",", "\"\<mod-sph\>\"", ",", 
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"Sequence", "@@", "%"}], "}"}], ",", "\"\<K\>\""}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.928745367384042*^9, 3.928745471231636*^9}, {
+  3.928746745570655*^9, 3.9287467561113453`*^9}, {3.92874680122089*^9, 
+  3.928746819067371*^9}, {3.9287469999680567`*^9, 3.9287470431139717`*^9}, {
+  3.9287475827937813`*^9, 3.928747589360429*^9}, {3.928747628409371*^9, 
+  3.928747656582728*^9}, {3.928748585453047*^9, 3.928748596196306*^9}, {
+  3.928748665309939*^9, 3.928748672681201*^9}},
+ CellLabel->
+  "In[352]:=",ExpressionUUID->"8b38347c-503c-421f-9306-b846069f0bce"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TGetComponents", "UsingDefault", 
+   "\"Using \\!\\(\\*RowBox[{\\\"\\\\\\\"the default index configuration {} \
+and the default coordinate system \\\\\\\\\\\\\\\"mod-sph\\\\\\\\\\\\\\\"\\\\\
+\\\"\\\"}]\\).\"", 2, 352, 148, 19435759106100705981, "Local", 
+   "OGRe`TGetComponents"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{{3.928747578665256*^9, 3.928747590207363*^9}, {
+   3.928747632512788*^9, 3.928747650195202*^9}, {3.928748559456477*^9, 
+   3.928748596690877*^9}, 3.928748673422958*^9},
+ CellLabel->
+  "During evaluation of \
+In[352]:=",ExpressionUUID->"3cc53456-e374-4dd5-af37-24590eaa1e1a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"U", "[", "r", "]"}], " ", 
+   SuperscriptBox[
+    RowBox[{
+     SuperscriptBox["\[Phi]", "\[Prime]",
+      MultilineFunction->None], "[", "r", "]"}], "2"]}], "}"}]], "Output",
+ Editable->False,
+ CellLabelStyle->Directive["CellLabel", Smaller, 
+   RGBColor[0, 0, 1]],
+ CellChangeTimes->{{3.928748559491953*^9, 3.928748596702042*^9}, 
+   3.928748673439105*^9},
+ CellLabel->
+  "Out[352]=",ExpressionUUID->"4ee8d97a-fb4d-413f-9f2f-d7264aa6a01d"],
+
+Cell[BoxData[
+ StyleBox[
+  TemplateBox[{"\"kineticScalar\"", "\":   \"", 
+    TemplateBox[{"\"K\"", 
+      TemplateBox[{}, "RowDefault"], 
+      TemplateBox[{}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
+     SubsuperscriptBox], "\"(\"", 
+    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
+     "RowWithSeparators"], "\")\"", "\" = \"", 
+    RowBox[{"U", " ", 
+      SuperscriptBox[
+       TemplateBox[{"Inactive", "\[Phi]", "r"}, "InactiveD"], "2"]}]},
+   "RowDefault"], "DisplayFormula",
+  StripOnInput->False]], "Output",
+ Editable->False,
+ CellLabelStyle->Directive["CellLabel", Smaller, 
+   RGBColor[0, 0, 1]],
+ CellChangeTimes->{3.92874867344343*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"33aec3c3-6d46-4b7f-8229-261ee5a7955a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"TGetComponents", "@", 
+   RowBox[{"TCalc", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], "*", 
+      RowBox[{"\"\<kineticScalar\>\"", "[", "\"\<\>\"", "]"}]}], "-", 
+     RowBox[{"\"\<potential\>\"", "[", "\"\<\>\"", "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"TGetComponents", "[", "\"\<sqrtg\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"TShow", "@", 
+  RowBox[{"TNewTensor", "[", 
+   RowBox[{
+   "\"\<lagrangianScalar\>\"", ",", "\"\<anz\>\"", ",", "\"\<mod-sph\>\"", 
+    ",", 
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Sequence", "@@", "%"}], 
+      RowBox[{"Sequence", "@@", "%%"}]}], "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.928747688771038*^9, 3.9287477930700207`*^9}, {
+  3.9287478601867723`*^9, 3.9287478750143557`*^9}, {3.928748240985038*^9, 
+  3.928748372397628*^9}, {3.928748420751182*^9, 3.92874854120944*^9}, {
+  3.928748576311016*^9, 3.928748577603499*^9}, {3.928748685489049*^9, 
+  3.9287487156886578`*^9}, {3.928749298950253*^9, 3.928749337913319*^9}, {
+  3.928749385901149*^9, 3.928749408125546*^9}},
+ CellLabel->
+  "In[384]:=",ExpressionUUID->"e9fd3f95-1dbb-447c-8008-f45c856b7344"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TGetComponents", "UsingDefault", 
+   "\"Using \\!\\(\\*RowBox[{\\\"\\\\\\\"the default index configuration {} \
+and the default coordinate system \\\\\\\\\\\\\\\"mod-sph\\\\\\\\\\\\\\\"\\\\\
+\\\"\\\"}]\\).\"", 2, 384, 169, 19435759106100705981, "Local", 
+   "OGRe`TGetComponents"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{{3.928748324929102*^9, 3.9287483727621326`*^9}, {
+   3.928748426749776*^9, 3.928748439424609*^9}, {3.928748476712118*^9, 
+   3.928748483821083*^9}, {3.928748527500543*^9, 3.928748542074383*^9}, 
+   3.928748578196287*^9, {3.928748700317767*^9, 3.9287487161830177`*^9}, {
+   3.928749315784981*^9, 3.928749338575605*^9}, {3.928749393670247*^9, 
+   3.9287494093765373`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[384]:=",ExpressionUUID->"e8c14f94-c7e3-49da-ae94-9873e20b6e6f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TGetComponents", "UsingDefault", 
+   "\"Using \\!\\(\\*RowBox[{\\\"\\\\\\\"the default index configuration {} \
+and the default coordinate system \\\\\\\\\\\\\\\"mod-sph\\\\\\\\\\\\\\\"\\\\\
+\\\"\\\"}]\\).\"", 2, 385, 170, 19435759106100705981, "Local", 
+   "OGRe`TGetComponents"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{{3.928748324929102*^9, 3.9287483727621326`*^9}, {
+   3.928748426749776*^9, 3.928748439424609*^9}, {3.928748476712118*^9, 
+   3.928748483821083*^9}, {3.928748527500543*^9, 3.928748542074383*^9}, 
+   3.928748578196287*^9, {3.928748700317767*^9, 3.9287487161830177`*^9}, {
+   3.928749315784981*^9, 3.928749338575605*^9}, {3.928749393670247*^9, 
+   3.928749409389966*^9}},
+ CellLabel->
+  "During evaluation of \
+In[384]:=",ExpressionUUID->"cc707734-6a05-4495-accf-f12fe9228f2f"],
+
+Cell[BoxData[
+ StyleBox[
+  TemplateBox[{"\"lagrangianScalar\"", "\":   \"", 
+    TemplateBox[{"\"\[DottedSquare]\"", 
+      TemplateBox[{}, "RowDefault"], 
+      TemplateBox[{}, "RowDefault"]}, "Subsuperscript", SyntaxForm -> 
+     SubsuperscriptBox], "\"(\"", 
+    TemplateBox[{",", "\",\"", "t", "r", "\[Theta]", "\[Alpha]"}, 
+     "RowWithSeparators"], "\")\"", "\" = \"", 
+    RowBox[{
+      RowBox[{"-", 
+        SqrtBox[
+         RowBox[{
+           SuperscriptBox["R", 
+            RowBox[{"1", "+", "B"}]], " ", 
+           RowBox[{"\[Xi]", "[", "\[Alpha]", "]"}]}]]}], " ", 
+      RowBox[{"(", 
+        RowBox[{
+          RowBox[{"V", "[", "\[Phi]", "]"}], "+", 
+          RowBox[{"2", " ", "U", " ", 
+            SuperscriptBox[
+             TemplateBox[{"Inactive", "\[Phi]", "r"}, "InactiveD"], "2"]}]}], 
+        ")"}]}]},
+   "RowDefault"], "DisplayFormula",
+  StripOnInput->False]], "Output",
+ Editable->False,
+ CellLabelStyle->Directive["CellLabel", Smaller, 
+   RGBColor[0, 0, 1]],
+ CellChangeTimes->{3.92874940941967*^9},
+ CellLabel->"OGRe:",ExpressionUUID->"5ac69b93-c307-4062-b3f8-bb2d0173e98a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"D", "[", 
+  RowBox[{"lagrangianScalar", ",", "anz"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9287491641300163`*^9, 3.9287491867251453`*^9}},
+ CellLabel->
+  "In[370]:=",ExpressionUUID->"281b2363-ad45-4d22-aeb8-d88034f62306"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.928749187988044*^9},
+ CellLabel->
+  "Out[370]=",ExpressionUUID->"5e5da5a4-a319-43e5-a616-17acc1f8e392"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"TCalc", "[", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"TShow", "@", 
+  RowBox[{"TCalc", "[", 
+   RowBox[{
+    RowBox[{"-", "2"}], 
+    RowBox[{"Sequence", "@@", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"TGetComponents", "[", "\"\<sqrtg\>\"", "]"}], ")"}], 
+      RowBox[{"-", "1"}]]}], "*", "%"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.928749220078458*^9, 3.9287492594920273`*^9}, {
+  3.9287494228612013`*^9, 3.928749458446797*^9}, {3.928749493835775*^9, 
+  3.9287496129712276`*^9}},ExpressionUUID->"e14e0264-bda6-41d1-be3d-\
+386f05e4c1e6"],
+
+Cell[BoxData[
+ RowBox[{"TCalc", "[", "]"}]], "Output",
+ CellChangeTimes->{{3.9287494177376432`*^9, 3.9287494593938427`*^9}, {
+  3.928749501915152*^9, 3.928749509058012*^9}, {3.928749546627158*^9, 
+  3.928749554268794*^9}, {3.928749584897667*^9, 3.928749604245332*^9}},
+ CellLabel->
+  "Out[406]=",ExpressionUUID->"a87d7c75-2f89-4de9-b68b-e85a00f69830"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TGetComponents", "UsingDefault", 
+   "\"Using \\!\\(\\*RowBox[{\\\"\\\\\\\"the default index configuration {} \
+and the default coordinate system \\\\\\\\\\\\\\\"mod-sph\\\\\\\\\\\\\\\"\\\\\
+\\\"\\\"}]\\).\"", 2, 407, 181, 19435759106100705981, "Local", 
+   "OGRe`TGetComponents"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.928749554273305*^9, {3.928749584900375*^9, 3.928749604249283*^9}},
+ CellLabel->
+  "During evaluation of \
+In[406]:=",ExpressionUUID->"f52c40f6-39f8-4872-b100-06b7b87f4c1d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "TCalc", "ErrorResult", 
+   "\"Invalid tensor expression obtained: \\!\\(\\*RowBox[{\\\"-\\\", \
+FractionBox[RowBox[{\\\"2\\\", \\\" \\\", RowBox[{\\\"TCalc\\\", \\\"[\\\", \
+\\\"]\\\"}]}], SqrtBox[RowBox[{SuperscriptBox[RowBox[{\\\"R\\\", \\\"[\\\", \
+\\\"r\\\", \\\"]\\\"}], RowBox[{\\\"1\\\", \\\"+\\\", \\\"B\\\"}]], \\\" \
+\\\", RowBox[{\\\"\[Xi]\\\", \\\"[\\\", \\\"\[Alpha]\\\", \
+\\\"]\\\"}]}]]]}]\\). Please check that the tensor expression you entered \
+contains only tensor references of the form \\\"ID\\\"[\\\"indices\\\"] \
+combined using addition, contraction (dot product), or multiplication by \
+scalar.\"", 2, 407, 182, 19435759106100705981, "Local", "OGRe`TCalc"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.928749554273305*^9, {3.928749584900375*^9, 3.928749604266276*^9}},
+ CellLabel->
+  "During evaluation of \
+In[406]:=",ExpressionUUID->"a376f1a2-34f6-4f7e-8128-fdeeefa750b1"],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{{3.9287494177376432`*^9, 3.9287494593938427`*^9}, {
+  3.928749501915152*^9, 3.928749509058012*^9}, {3.928749546627158*^9, 
+  3.928749554268794*^9}, {3.928749584897667*^9, 3.928749604275175*^9}},
+ CellLabel->
+  "Out[407]=",ExpressionUUID->"98e83a64-512e-4c78-a11d-a6a3335877bd"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.928669596723572*^9, 
-  3.9286696042457457`*^9}},ExpressionUUID->"9a8ad92e-1cb0-41ab-9f19-\
-2250d15de3e8"]
+ CellChangeTimes->{
+  3.928749405018126*^9},ExpressionUUID->"875eccad-feba-4b7f-aecc-\
+5bb1166b847a"]
 },
 WindowSize->{718.5, 793.5},
-WindowMargins->{{Automatic, 0}, {0, Automatic}},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
 FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"50f33683-7184-4c91-bc95-0698953a30c7"
@@ -2575,84 +1104,84 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 517, 12, 50, "Input",ExpressionUUID->"12bc97be-70b3-4c05-a17e-ad9d006f40fe"],
+Cell[1078, 34, 215, 3, 29, "Input",ExpressionUUID->"54c19aa1-1d36-4c8a-852d-909f93ad6c45"],
+Cell[1296, 39, 214, 4, 29, "Input",ExpressionUUID->"a0d26ff0-1db5-428e-8ac3-34f12ddd9933"],
+Cell[1513, 45, 247, 4, 29, "Input",ExpressionUUID->"4260d15a-7fc0-44d4-8309-7a7267c13ee9"],
+Cell[1763, 51, 213, 4, 29, "Input",ExpressionUUID->"f0c0930b-91f0-4819-9173-4f2f7ef9e9d5"],
+Cell[1979, 57, 282, 6, 29, "Input",ExpressionUUID->"945fff7c-f5b0-4f1e-9ebe-0889e9e9c0b1"],
+Cell[2264, 65, 554, 11, 31, "Input",ExpressionUUID->"8dd74952-ee24-4f75-afd8-25b26403da31"],
 Cell[CellGroupData[{
-Cell[580, 22, 521, 13, 50, "Input",ExpressionUUID->"12bc97be-70b3-4c05-a17e-ad9d006f40fe"],
-Cell[1104, 37, 266, 6, 40, "Output",ExpressionUUID->"fe21bbf2-fb8a-4aee-a819-2dd1da78a296"]
+Cell[2843, 80, 457, 9, 29, "Input",ExpressionUUID->"31450a97-e74f-43d2-8be4-f3fc791e6cb0"],
+Cell[3303, 91, 377, 8, 33, "Output",ExpressionUUID->"84a6bfed-399c-4e92-b396-623643b8d1ec"]
 }, Open  ]],
-Cell[1385, 46, 219, 4, 29, "Input",ExpressionUUID->"54c19aa1-1d36-4c8a-852d-909f93ad6c45"],
+Cell[3695, 102, 1094, 26, 74, "Input",ExpressionUUID->"a3c9defa-d35f-4d0e-91cc-8c70a7393793"],
+Cell[4792, 130, 217, 3, 29, "Input",ExpressionUUID->"9a8056ff-ec04-4719-ba37-eb51b4d078b5"],
+Cell[5012, 135, 220, 3, 31, "Input",ExpressionUUID->"cd2b81db-0f50-47ec-b1c6-60dab060a804"],
+Cell[5235, 140, 273, 5, 29, "Input",ExpressionUUID->"e8d7d592-bd02-4eb3-8f28-2ecb5fdffaaa"],
 Cell[CellGroupData[{
-Cell[1629, 54, 218, 5, 29, "Input",ExpressionUUID->"a0d26ff0-1db5-428e-8ac3-34f12ddd9933"],
-Cell[1850, 61, 267, 5, 33, "Output",ExpressionUUID->"99aeec78-eac3-4ab9-9970-4ec0e3bda6af"]
+Cell[5533, 149, 747, 17, 70, "Input",ExpressionUUID->"ca14de5e-2a4f-4cde-b0b0-63846f830cf0"],
+Cell[6283, 168, 792, 20, 43, "Output",ExpressionUUID->"228c34c2-54cb-496c-a292-331abda56946"]
 }, Open  ]],
+Cell[7090, 191, 391, 9, 29, "Input",ExpressionUUID->"16c53d30-d29f-4895-aee5-7a68030ca203"],
+Cell[7484, 202, 300, 5, 29, "Input",ExpressionUUID->"d53e102d-d804-454a-abc2-7736849d2ad2"],
+Cell[7787, 209, 308, 5, 29, "Input",ExpressionUUID->"c5c42649-b3aa-4695-897c-0e5a624346f6"],
+Cell[8098, 216, 453, 11, 29, "Input",ExpressionUUID->"8ba8a4dd-6467-456d-b094-025a438fcd22"],
+Cell[8554, 229, 276, 6, 29, "Input",ExpressionUUID->"a21ab60f-ed4b-457e-bb95-0fc37c90c113"],
+Cell[8833, 237, 320, 7, 29, "Input",ExpressionUUID->"78a8ef90-f273-4295-99ba-d756d3c1c212"],
 Cell[CellGroupData[{
-Cell[2154, 71, 217, 5, 29, "Input",ExpressionUUID->"f0c0930b-91f0-4819-9173-4f2f7ef9e9d5"],
-Cell[2374, 78, 420, 10, 28, "Message",ExpressionUUID->"410658cc-1076-4dca-ae4a-ef22b5c383bf"]
-}, Open  ]],
-Cell[2809, 91, 286, 7, 29, "Input",ExpressionUUID->"945fff7c-f5b0-4f1e-9ebe-0889e9e9c0b1"],
-Cell[CellGroupData[{
-Cell[3120, 102, 508, 11, 31, "Input",ExpressionUUID->"8dd74952-ee24-4f75-afd8-25b26403da31"],
-Cell[3631, 115, 417, 10, 28, "Message",ExpressionUUID->"357f0359-9fab-4162-9ec7-1774984e4da8"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4085, 130, 375, 8, 29, "Input",ExpressionUUID->"31450a97-e74f-43d2-8be4-f3fc791e6cb0"],
-Cell[4463, 140, 349, 7, 33, "Output",ExpressionUUID->"38a75138-c841-40b0-8dd6-d620d8e8a5f1"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[4849, 152, 1100, 27, 74, "Input",ExpressionUUID->"a3c9defa-d35f-4d0e-91cc-8c70a7393793"],
-Cell[5952, 181, 413, 10, 28, "Message",ExpressionUUID->"33b2d8a1-a2cb-498f-8977-d044e09de27f"],
-Cell[6368, 193, 430, 10, 44, "Message",ExpressionUUID->"4a4de615-8fe4-4cbc-9f25-8f214a3d9d0f"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[6835, 208, 221, 4, 29, "Input",ExpressionUUID->"9a8056ff-ec04-4719-ba37-eb51b4d078b5"],
-Cell[7059, 214, 911, 23, 88, "Output",ExpressionUUID->"20eaa265-cecf-4351-9f76-7c6df02b3f8a"]
+Cell[9178, 248, 311, 8, 29, "Input",ExpressionUUID->"0b4aaac2-ca2c-4850-bde4-dbf433844eae"],
+Cell[9492, 258, 7034, 177, 157, "Output",ExpressionUUID->"6914e139-12e8-4626-bc1d-f9d61a981519"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8007, 242, 224, 4, 31, "Input",ExpressionUUID->"cd2b81db-0f50-47ec-b1c6-60dab060a804"],
-Cell[8234, 248, 2304, 54, 102, "Output",ExpressionUUID->"528f4a7d-194f-4564-a02f-3e57923e7fcf"]
+Cell[16563, 440, 562, 13, 31, "Input",ExpressionUUID->"716d30ec-da92-4804-b088-d6cf96cb914c"],
+Cell[17128, 455, 5283, 150, 183, "Output",ExpressionUUID->"9c0a42a7-0d44-496b-9bcd-de8ab2530171"]
+}, Open  ]],
+Cell[22426, 608, 218, 4, 35, "Text",ExpressionUUID->"af50357f-4644-41b0-9251-0ca2b1088e8a"],
+Cell[CellGroupData[{
+Cell[22669, 616, 682, 15, 31, "Input",ExpressionUUID->"2d6d4136-c9b1-442d-bb08-019cda818f8b"],
+Cell[23354, 633, 651, 15, 34, "Output",ExpressionUUID->"78287317-8b96-4a3a-b3f4-5660ced846fe"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10575, 307, 224, 4, 29, "Input",ExpressionUUID->"e8d7d592-bd02-4eb3-8f28-2ecb5fdffaaa"],
-Cell[10802, 313, 2076, 59, 54, "Output",ExpressionUUID->"bc27c04e-d0c5-4f20-b41c-e88149b966e3"]
+Cell[24042, 653, 442, 11, 29, "Input",ExpressionUUID->"e87eed89-fa6a-4da0-b1b2-8ec821256ed9"],
+Cell[24487, 666, 675, 16, 34, "Output",ExpressionUUID->"01f8c6a2-2a1f-4ffd-83b1-4b48a4fbe4f3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12915, 377, 233, 4, 29, "Input",ExpressionUUID->"ca14de5e-2a4f-4cde-b0b0-63846f830cf0"],
-Cell[13151, 383, 527, 14, 33, "Output",ExpressionUUID->"c39d5550-a124-49f5-9027-d2d4ce6dcd99"]
+Cell[25199, 687, 402, 10, 29, "Input",ExpressionUUID->"d5482cbe-30f6-40b8-a49b-111f3313b6b3"],
+Cell[25604, 699, 1074, 26, 88, "Output",ExpressionUUID->"d3833d91-7a37-4cd2-a57a-2d549a250f68"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13715, 402, 395, 10, 29, "Input",ExpressionUUID->"16c53d30-d29f-4895-aee5-7a68030ca203"],
-Cell[14113, 414, 2109, 50, 109, "Output",ExpressionUUID->"45f3a9e7-4b55-41d0-9a4f-6f0503be862c"]
+Cell[26715, 730, 451, 11, 29, "Input",ExpressionUUID->"e9f69c0e-586b-4b6c-a15e-e1d4c78a0f96"],
+Cell[27169, 743, 1320, 36, 51, "Output",ExpressionUUID->"bac42c57-8afe-4f04-9710-5eae502d49bd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16259, 469, 306, 6, 29, "Input",ExpressionUUID->"d53e102d-d804-454a-abc2-7736849d2ad2"],
-Cell[16568, 477, 9670, 225, 231, "Output",ExpressionUUID->"f3beae2f-e72f-423f-91e6-2321e89485b0"]
+Cell[28526, 784, 266, 6, 29, "Input",ExpressionUUID->"07cc48b6-2813-4858-b141-55f81683194d"],
+Cell[28795, 792, 1104, 27, 93, "Output",ExpressionUUID->"0f7edc68-d05a-449c-851d-cf9ecb572597"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26275, 707, 312, 6, 29, "Input",ExpressionUUID->"c5c42649-b3aa-4695-897c-0e5a624346f6"],
-Cell[26590, 715, 29514, 680, 402, "Output",ExpressionUUID->"8c96e3fd-5161-46ab-b27e-86bb2cc2a594"]
+Cell[29936, 824, 1009, 22, 50, "Input",ExpressionUUID->"8b38347c-503c-421f-9306-b846069f0bce"],
+Cell[30948, 848, 649, 13, 44, "Message",ExpressionUUID->"3cc53456-e374-4dd5-af37-24590eaa1e1a"],
+Cell[31600, 863, 493, 14, 35, "Output",ExpressionUUID->"4ee8d97a-fb4d-413f-9f2f-d7264aa6a01d"],
+Cell[32096, 879, 754, 18, 34, "Output",ExpressionUUID->"33aec3c3-6d46-4b7f-8229-261ee5a7955a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[56141, 1400, 444, 10, 29, "Input",ExpressionUUID->"8ba8a4dd-6467-456d-b094-025a438fcd22"],
-Cell[56588, 1412, 421, 10, 28, "Message",ExpressionUUID->"653feb88-6e03-457d-a3fc-891e8eca3e8d"],
-Cell[57012, 1424, 9255, 204, 152, "Output",ExpressionUUID->"412cf233-63ad-4984-978a-34c676ba5329"]
+Cell[32887, 902, 1236, 30, 90, "Input",ExpressionUUID->"e9fd3f95-1dbb-447c-8008-f45c856b7344"],
+Cell[34126, 934, 851, 16, 44, "Message",ExpressionUUID->"e8c14f94-c7e3-49da-ae94-9873e20b6e6f"],
+Cell[34980, 952, 849, 16, 44, "Message",ExpressionUUID->"cc707734-6a05-4495-accf-f12fe9228f2f"],
+Cell[35832, 970, 1114, 29, 44, "Output",ExpressionUUID->"5ac69b93-c307-4062-b3f8-bb2d0173e98a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[66304, 1633, 280, 7, 29, "Input",ExpressionUUID->"a21ab60f-ed4b-457e-bb95-0fc37c90c113"],
-Cell[66587, 1642, 10323, 251, 166, "Output",ExpressionUUID->"f0dc707b-4041-48d9-8d4b-7f328436f473"]
+Cell[36983, 1004, 247, 5, 29, "Input",ExpressionUUID->"281b2363-ad45-4d22-aeb8-d88034f62306"],
+Cell[37233, 1011, 153, 3, 33, "Output",ExpressionUUID->"5e5da5a4-a319-43e5-a616-17acc1f8e392"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[76947, 1898, 324, 8, 29, "Input",ExpressionUUID->"78a8ef90-f273-4295-99ba-d756d3c1c212"],
-Cell[77274, 1908, 3540, 80, 65, "Output",ExpressionUUID->"5529cd61-00fd-47b6-9b22-0b3be7bb1b13"]
+Cell[37423, 1019, 584, 14, 52, "Input",ExpressionUUID->"e14e0264-bda6-41d1-be3d-386f05e4c1e6"],
+Cell[38010, 1035, 351, 6, 33, "Output",ExpressionUUID->"a87d7c75-2f89-4de9-b68b-e85a00f69830"],
+Cell[38364, 1043, 552, 12, 44, "Message",ExpressionUUID->"f52c40f6-39f8-4872-b100-06b7b87f4c1d"],
+Cell[38919, 1057, 953, 17, 86, "Message",ExpressionUUID->"a376f1a2-34f6-4f7e-8128-fdeeefa750b1"],
+Cell[39875, 1076, 332, 5, 33, "Output",ExpressionUUID->"98e83a64-512e-4c78-a11d-a6a3335877bd"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[80851, 1993, 285, 7, 29, "Input",ExpressionUUID->"0b4aaac2-ca2c-4850-bde4-dbf433844eae"],
-Cell[81139, 2002, 10775, 261, 161, "Output",ExpressionUUID->"92b2465a-2559-4f41-afee-4a860d3857ba"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[91951, 2268, 378, 9, 29, "Input",ExpressionUUID->"f594ae4c-1598-49c2-8356-ef00cc42ab88"],
-Cell[92332, 2279, 463, 10, 28, "Message",ExpressionUUID->"45794234-0d80-4c5f-86e6-21b98f9ba42b"],
-Cell[92798, 2291, 10827, 261, 161, "Output",ExpressionUUID->"5da4c438-4931-4d2f-b01d-476894198036"]
-}, Open  ]],
-Cell[103640, 2555, 154, 3, 29, "Input",ExpressionUUID->"9a8ad92e-1cb0-41ab-9f19-2250d15de3e8"]
+Cell[40222, 1084, 128, 3, 29, "Input",ExpressionUUID->"875eccad-feba-4b7f-aecc-5bb1166b847a"]
 }
 ]
 *)
