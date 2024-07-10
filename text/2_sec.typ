@@ -9,7 +9,9 @@
 
 == Motivation
 
-here
+The idea behind this solution-generating method is to reduce the dependence of the solution obtained through the EFE to a single function that will encode all the physical information about the structure of the spacetime.
+
+The innovation with respect to the method described in @exact-sol resides in the order of ...
 
 == Derivation
 
@@ -40,9 +42,11 @@ $ R''/R &= -2/d phi'^2 $ <riccati>
 
 $ (U R^d phi')' &= 1/4 R^d pdv(V, phi) $ 
 
-$ (U R^d)'' &= d(d-1) R^(d-2) - (d+2)/d R^d V $
+$ (U R^d)'' &= d(d-1) R^(d-2) - (d+2)/d R^d V $ <efe3>
 
-$ (U R^(d-1) R')' &= (d-1) R^(d-2) - 1/d R^d V $
+$ (U R^(d-1) R')' &= (d-1) R^(d-2) - 1/d R^d V $ <efe4>
+
+where the prime denotes derivation with respect to $r$.
 
 For a given scalar field $phi(r)$ and with the substitution $R(r) = exp( integral^r dd(r') y(r') )$, @riccati can be written in the form
 
@@ -52,12 +56,35 @@ which is a case of the Riccati equation.
 
 Using $r_0 > 0$ as an arbitrary lenght scale, we can introduce a new dimensionless coordinate $x := r_0 slash r$, which simplifies the calculations, and sets the units to the mass of the solution and to the strenght of the scalar field. At this point, we set $y(r) = dot(P) slash P $ and obtain the following scalar field dependent only on the function $P(x)$
 
-$ phi(x) = sqrt(d/2) integral dd(x) sqrt(- dot.double(P)/P) $
+$ phi(x) = sqrt(d/2) integral dd(x) sqrt(- dot.double(P)/P) $ <phi>
 
 where the dot denotes derivation with respect to $x$ and
 
-$ R(x) = r_0/x P(x) $
+$ R(x) = r_0/x P(x) $ <RP>
+
+From @efe3 and @efe4, we can isolate $V$
+
+$ -(d+2)/d R^d V &= (U R^d)'' - d (d-1) R^(d-2) \
+	-(d+2)/d R^d V &= (d+2)(U R^(d-1) R')' - (d+2) (d-1) R^(d-2) $
+
+therefore
+
+$ (U R^d)'' - d (d-1) R^(d-2) = (d+2)(U R^(d-1) R')' - (d+2) (d-1) R^(d-2) \
+	arrow.b.double \
+	i $
+
+Solving the last differential equation yields the metric function $U$ in terms of only the function $P(x)$
+
+$ U(x) = (r_0^2 P^2)/x^2 ( c_2 - (2(d-1))/r_0^2 integral dd(x) x^d/P^(d+2) integral dd(x') P^(d-2)/x'^d + c_1/r_0^(d+1) integral dd(x) x^d/P^(d+2) ) $ <U>
+
+where $c_1$ and $c_2$ are integration constants, whose values can be determined imposing boundary conditions on the asymptotic behaviour of the spacetime metric.
+
+Substituting @U and @RP in either @efe3 or @efe4 returns the scalar potential $V$, this too only dependent on the function $P(x)$
+
+$ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) $
 
 == Classification of the solution
 
-here
+As seen in the previous section, the scalar field $phi$, the metric function $U$ and the scalar potential $V$ all depend exclusively on the function $P(x)$, therefore the latter encapsulates all the information about the solution.
+
+Since the scalar field must be real, from @phi we obtain that $dot.double(P) slash P$ must be negative. If we set $P$ to be positive everywhere, we also obtain $dot.double(P) < 0$.
