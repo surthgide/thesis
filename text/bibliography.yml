@@ -1,0 +1,27 @@
+dinverno:
+  type: Book
+  title: Introducing Einstein's Relativity, A deeper understanding (Second edition)
+  author: 
+    - D'Inverno, R.
+    - Vickers, J.
+  publisher: Oxford University Press
+  date: 2022
+  serial number:
+    isbn: 978-0-19-886202-4
+    doi: 10.1093/oso/9780198862024.001.0001
+
+exact-sol:
+  type: Article
+  author:
+    - Cadoni, M.
+    - Mignemi, S.
+    - Serra, M.
+  title: Exact solutions with AdS asymptotics of Einstein and Einstein-Maxwell gravity minimally coupled to a scalar field
+  serial number:
+    doi: "10.1103/PhysRevD.84.084046"
+  date: 2011-08-16
+  parent:
+    type: Periodical
+    title: Physical Review D
+    volume: 84
+    publisher: American Physical Society

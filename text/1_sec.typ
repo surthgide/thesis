@@ -7,7 +7,7 @@
 
 = General relativity
 
-The framework of general relativity will be used throughout this thesis as a basis to expand onto.
+The framework of general relativity will be used throughout this thesis as a basis to expand onto, using @dinverno as a reference.
 
 == Mathematical background
 

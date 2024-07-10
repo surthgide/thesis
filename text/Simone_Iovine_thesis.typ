@@ -47,4 +47,7 @@
 
 #v(50pt)
 
-#bibliography("bibliography.yml")
+#bibliography(
+	"bibliography.yml",
+	style: "springer-mathphys",
+	)
