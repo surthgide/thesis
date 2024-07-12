@@ -5,13 +5,13 @@
 
 // ==========
 
-= Solution-generating method
+= Solution-generating method <sol-gen>
 
 == Motivation
 
 The idea behind this solution-generating method is to reduce the dependence of the solution obtained through the EFE to a single function that will encode all the physical information about the structure of the spacetime.
 
-The innovation with respect to the method described in @exact-sol resides in the order of ...
+The method described in @exact-sol differs from the one described in this chapter in the fact that the scalar profile is not fixed _a priori_, but instead found via the EFE: these equations yield a differential equation whose solution will be the only (functional) dependency of the quantites used to characterize the overall solution, whose only condition will be of producing a asymptotically flat spacetime.
 
 == Derivation
 
@@ -87,4 +87,6 @@ $ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(
 
 As seen in the previous section, the scalar field $phi$, the metric function $U$ and the scalar potential $V$ all depend exclusively on the function $P(x)$, therefore the latter encapsulates all the information about the solution.
 
-Since the scalar field must be real, from @phi we obtain that $dot.double(P) slash P$ must be negative. If we set $P$ to be positive everywhere, we also obtain $dot.double(P) < 0$.
+=== Behaviour of $P(x)$
+
+Since the scalar field $phi$ must be real, from @phi we obtain that $dot.double(P) slash P$ must be negative. If we set $P$ to be positive everywhere, we also obtain $dot.double(P) < 0$.
