@@ -11,7 +11,7 @@
 
 The idea behind this solution-generating method is to reduce the dependence of the solution obtained through the EFE to a single function that will encode all the physical information about the structure of the spacetime.
 
-The method described in @exact-sol differs from the one described in this chapter in the fact that the scalar profile is not fixed _a priori_, but instead found via the EFE: these equations yield a differential equation whose solution will be the only (functional) dependency of the quantites used to characterize the overall solution, whose only condition will be of producing a asymptotically flat spacetime.
+The method described in @exact-sol differs from the one described in this chapter in the fact that the scalar profile is not fixed _a priori_, but instead found via the EFE: these equations yield a differential equation whose solution will be the only (functional) dependency of the quantites used to characterize the overall solution, whose only condition will be of producing an asymptotically flat spacetime.
 
 == Derivation
 
@@ -73,7 +73,7 @@ $ (U R^d)'' - d (d-1) R^(d-2) = (d+2)(U R^(d-1) R')' - (d+2) (d-1) R^(d-2) \
 	arrow.b.double \
 	i $
 
-Solving the last differential equation yields the metric function $U$ in terms of only the function $P(x)$
+Solving the last differential equation yields the metric function $U$ in terms of the function $P(x)$
 
 $ U(x) = (r_0^2 P^2)/x^2 ( c_2 - (2(d-1))/r_0^2 integral dd(x) x^d/P^(d+2) integral dd(x') P^(d-2)/x'^d + c_1/r_0^(d+1) integral dd(x) x^d/P^(d+2) ) $ <U>
 
@@ -85,8 +85,26 @@ $ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(
 
 == Classification of the solution
 
-As seen in the previous section, the scalar field $phi$, the metric function $U$ and the scalar potential $V$ all depend exclusively on the function $P(x)$, therefore the latter encapsulates all the information about the solution.
+As seen in the previous section, the scalar field $phi$, the metric function $U$ and the scalar potential $V$ all depend exclusively on $P(x)$, therefore this function's behaviour encapsulates all the information about the solution.
 
 === Behaviour of $P(x)$
 
-Since the scalar field $phi$ must be real, from @phi we obtain that $dot.double(P) slash P$ must be negative. If we set $P$ to be positive everywhere, we also obtain $dot.double(P) < 0$.
+The reality of $phi$, through @phi, leads to $dot.double(P) slash P < 0$. We also have that the radius of the $d$-sphere $R(x)$ must be analytic, positive and monotonically decreasing, therefore
+
+$ cases(
+	phi in RR,
+	R > 0,
+	dot(R) < 0)
+quad arrow.r.double.long quad 
+cases(
+	P > 0,
+	dot.double(P) < 0,
+	dot(P) slash x - P slash x^2 < 0) $
+
+Moreover, the condition of asymptotic flatness for $P(x)$ implies that
+
+$ P(0) = 1
+quad and quad
+lim_(x -> 0) P(x) = sum_(n=0)^N a_n x^n $
+
+
