@@ -1,8 +1,5 @@
 #import "@preview/physica:0.9.3": *
 
-#let var(f, x) = { $dv(#f, #x, d:delta)$ }
-#let detg = { $sqrt(-g)$ }
-
 // ==========
 
 = Solution-generating method <sol-gen>
@@ -107,4 +104,33 @@ $ P(0) = 1
 quad and quad
 lim_(x -> 0) P(x) = sum_(n=0)^N a_n x^n $
 
+On the account of letting $R(x)$ span the range $[0,oo)$, the zeros of $P(x)$ inform the range of the coordinate $x$:
 
+#enum(numbering: "I.",
+	[$P(x_0)=0$, where $x_0$ is finite, leads to $x in [0, x_0]$],
+	[$display(lim_(x -> oo)) P(x) = "const" != 0$ leads to $x in [0, oo)$],
+	)
+
+In both cases, the upper limit of the coordinate $x$ range corresponds the $r$-origin while $x=0$ to the $r$-asymptotic region.
+
+=== Horizons and curvature singularities
+
+existence event horizon $=>$ existence of zero of $U$
+
+behaviour of $P$ and its derivatives in $x_0$ or $oo$
+
+4 dimensions equations
+
+$phi, U, V$
+
+$cal(R), cal(R)_(a b) cal(R)^(a b), K$
+
+conditions A and B
+
+=== Geometry of the solution
+
+how to find $c_2$ and $c_1$
+
+no condition for the origin $=>$ from these we find the geometry at the origin
+
+naked singularity / black holes / regular solutions
