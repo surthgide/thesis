@@ -78,7 +78,7 @@ where $c_1$ and $c_2$ are integration constants, whose values can be determined 
 
 Substituting @U and @RP in either @efe3 or @efe4 returns the scalar potential $V$, this too only dependent on the function $P(x)$
 
-$ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) $
+$ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) $ <V>
 
 == Classification of the solution
 
@@ -113,21 +113,31 @@ On the account of letting $R(x)$ span the range $[0,oo)$, the zeros of $P(x)$ in
 
 In both cases, the upper limit of the coordinate $x$ range corresponds the $r$-origin while $x=0$ to the $r$-asymptotic region.
 
-=== Horizons and curvature singularities
+Evaluating the metric function $U$ in the form of @U at $x=x_0$ (respectively $x=oo$ for case II), we find that it can become singular and, therefore, a curvature singularity would originate at this point in the spacetime. The criterion for discerning when the singularity would ensue resides in the behaviour of $P$ and its derivatives.
 
-existence event horizon $=>$ existence of zero of $U$
+Substituting $d=2$ (i.e. considering a 4-dimensional spacetime) in @phi, @U and @V we obtain
 
-behaviour of $P$ and its derivatives in $x_0$ or $oo$
+$ phi(x) = integral dd(x) sqrt(- 1/P dv(P, x, 2)) $ <phi4>
 
-4 dimensions equations
+$ U(x) = (r_0^2 P^2)/x^2 ( c_2 - 2/r_0^2 integral dd(x) x/P^(4) + c_1/r_0^(3) integral dd(x) x^2/P^(4) ) $ <U4>
 
-$phi, U, V$
+$ V[phi(x)] = x^2/(r_0^2 P^2) ( 1 - x^2/2 dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) ) $ <V4>
 
-$cal(R), cal(R)_(a b) cal(R)^(a b), K$
+From these and the Ricci tensor recovered from the EFE
+
+$ R_(a b) = 2 (partial_a phi) (partial_b phi) + 1/2 g_(a b) V(phi) $
+
+we get the curvature invariants
+
+$ cal(R) = $
+
+$ cal(R)_(a b) cal(R)^(a b) = $
+
+$ K := cal(R)_(a b c d) cal(R)^(a b c d) = $
 
 conditions A and B
 
-=== Geometry of the solution
+existence event horizon $=>$ existence of zero of $U$
 
 how to find $c_2$ and $c_1$
 
