@@ -125,17 +125,24 @@ $ V[phi(x)] = x^2/(r_0^2 P^2) ( 1 - x^2/2 dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) ) $ 
 
 From these and the Ricci tensor recovered from the EFE
 
-$ R_(a b) = 2 (partial_a phi) (partial_b phi) + 1/2 g_(a b) V(phi) $
+$ cal(R)_(a b) = 2 (partial_a phi) (partial_b phi) + 1/2 g_(a b) V(phi) $
 
 we get the curvature invariants
 
-$ cal(R) = $
+$ cal(R) = 2 (V - (x^4 U dot.double(P))/(r_0^2 P)) $
 
-$ cal(R)_(a b) cal(R)^(a b) = $
+$ cal(R)_(a b) cal(R)^(a b) = V^2 - ((2 x^4 U dot.double(P))/(r_0^2 P)) V + ((2 x^4 U dot.double(P))/(r_0^2 P))^2 $
 
-$ K := cal(R)_(a b c d) cal(R)^(a b c d) = $
+$ K &:= cal(R)_(a b c d) cal(R)^(a b c d) \
+	&= (4 x^2)/(r_0^4 P^3) (U (P - x dot(P))^2 - 1) (r_0^2 V P + 2 x^4 U dot.double(P)) + (12 x^4)/(r_0^4 P^4) (U (P - x dot(P))^2 - 1)^2 + V^2 +(8 x^8 U^2 dot.double(P)^2)/(r_0^4 P^2) $
 
-conditions A and B
+At this point, by studying the behaviour of the quantities inside the aforementioned invariants, we can deduce the conditions for the behaviour at $x=x_0$ or $x=oo$:
+
+#enum(numbering: "A.",
+	number-align: end + ,
+	[_regular point_: $(dot.double(P) -> 0) and (display((x^4 U dot.double(P))/(r_0^2 P)) < oo) and (V < oo)$],
+	[_curvature singularity_: $(dot.double(P) < oo thick or thick dot.double(P) -> 0) and (display((x^4 U dot.double(P))/(r_0^2 P)) -> oo thick and slash or thick V -> oo)$],
+)
 
 existence event horizon $=>$ existence of zero of $U$
 
