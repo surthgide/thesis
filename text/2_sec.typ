@@ -80,9 +80,14 @@ Substituting @U and @RP in either @efe3 or @efe4 returns the scalar potential $V
 
 $ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) $ <V>
 
+
+The dependence of the scalar potential $V$ from only the function $P$ gives way to an--albeit difficult--transposition of the conditions on the former to conditions on the latter. This is particularly useful in the definition of the requirements that the scalar potentials has to follow in order to abide to the modern no-hair theorems. In particular, these requirements can be related to the positive energy theorem #footnote[
+	Recalling the weak energy condition, i.e. for every timelike vector field $X^a$, the matter density observed by the corresponding observer is always non-negative $rho = T_(a b) X^a X^b gt.eq.slant 0$ where $X^2 > 0$, the dominant energy condition states that, in addition to the weak energy condition, for every furure-pointing causal vector field (either timelike or null) $Y^a$, the vector field $- tensor(T, +a, -b) Y^b$ must be a future-pointing causal vector, i.e. mass-energy can never be observed to be flowing faster than light. At this point, the positive energy theorem states that, as long as the dominant energy condition holds, any asymptotically flat spacetime has non-negative ADM mass-energy and the only spacetime with zero ADM mass is Minkowski space.
+	], whose influence is to limit the global form of the scalar potential: either the scalar potential is unbounded from below and/or it possess a negative region such that the negative energy is not balanced by a positive contribution from another region.
+
 == Classification of the solution
 
-As seen in the previous section, the scalar field $phi$, the metric function $U$ and the scalar potential $V$ all depend exclusively on $P(x)$, therefore this function's behaviour encapsulates all the information about the solution.
+As seen in the previous section, the scalar field $phi$, the metric function $U$ and the scalar potential $V$ (together with its conditions for the no-hair theorems) all depend exclusively on $P(x)$, therefore this function's behaviour encapsulates all the information about the solution.
 
 === Behaviour of $P(x)$
 
