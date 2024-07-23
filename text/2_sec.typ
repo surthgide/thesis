@@ -138,16 +138,42 @@ $ K &:= cal(R)_(a b c d) cal(R)^(a b c d) \
 
 At this point, by studying the behaviour of the quantities inside the aforementioned invariants, we can deduce the conditions for the behaviour at $x=x_0$ or $x=oo$:
 
-#enum(numbering: "A.",
-	number-align: end + ,
-	[_regular point_: $(dot.double(P) -> 0) and (display((x^4 U dot.double(P))/(r_0^2 P)) < oo) and (V < oo)$],
-	[_curvature singularity_: $(dot.double(P) < oo thick or thick dot.double(P) -> 0) and (display((x^4 U dot.double(P))/(r_0^2 P)) -> oo thick and slash or thick V -> oo)$],
+#enum(tight: false,
+	numbering: "A.",
+	spacing: 1.5em,
+	[_regular point_: $(dot.double(P) -> 0) and ((x^4 U dot.double(P))/(r_0^2 P) < oo) and (V < oo)$],
+	[_curvature singularity_: $(dot.double(P) < oo thick or thick dot.double(P) -> 0) and ((x^4 U dot.double(P))/(r_0^2 P) -> oo thick and slash or thick V -> oo)$],
 )
 
-existence event horizon $=>$ existence of zero of $U$
+We see from these conditions that no curvature singularity arises if $dot.double(P)$ goes too slowly to zero. Instead, in case B, the curvature singularity leads to an event horizon, which in turn demands the existence of at least one zero of the metric function $U$, i.e.
 
-how to find $c_2$ and $c_1$
+$ lr(exists thin x_h in cases(
+	[0, x_0] comma & thick "case I",
+	[0, oo] comma & thick "case II",
+	) thick mid(|) U(x_h) = 0) $
 
-no condition for the origin $=>$ from these we find the geometry at the origin
+This does not prevent $U(x)$ from having more than one zero. In order to derive the complete form of this metric function, we have to find the values of the two integration constants: the asymptotic flatness of the solutions @phi, @U and @V, i.e.
 
-naked singularity / black holes / regular solutions
+$ cases(
+	U(r) -> 1,
+	R(r) -> r,
+	phi(r) -> 0,
+	) wide r -> oo $
+
+yields the value for $c_2$, while the subleading terms of the expansion of $U$ in the limit $r -> oo$ compared to the Schwarzschild geometry
+
+$ U_S(r) = 1 - M/(8 pi r) $
+
+where $M$ represents the solution gravitational mass, determine the constant $c_1$.
+
+Since we have no a priori boundary condition for the geometry at the origin, the
+presence of zeros of $U$ and curvature singularities describe the geometry of the following objects:
+
+- _Naked singularity_: a curvature singularity which is not shielded by an event horizon $(U != 0)$ \
+	Applicable in case I or in case II while condition B holds;
+
+- _Black hole_: a curvature singularity is shielded by and event horizon $(U(r_h)=0)$ \
+	Applicable in case I or in case II while condition B holds;
+
+- _Regular solution_: spacetime is everywhere regular (star-like) \
+	Applicable in case II while condition A holds;
