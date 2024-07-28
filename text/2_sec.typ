@@ -8,7 +8,9 @@
 
 The idea behind this solution-generating method is to reduce the dependence of the solution obtained through the EFE to a single function that will encode all the physical information about the structure of the spacetime.
 
-The method described in @exact-sol differs from the one described in this chapter in the fact that the scalar profile is not fixed _a priori_, but instead found via the EFE: these equations yield a differential equation whose solution will be the only (functional) dependency of the quantites used to characterize the overall solution, whose only condition will be of producing an asymptotically flat spacetime.
+The method described in this chapter differs from the one described in @exact-sol in the fact that the scalar profile is not fixed _a priori_, but instead found via the EFE: these equations yield a differential equation whose solution will be the only (functional) dependency of the quantites used to characterize the overall solution, whose only condition will be of producing an asymptotically flat spacetime.
+
+The method will eventually yield a static-spherically symmetric solution of $(d+2)$-dimensional gravity minimally coupled to a real scalar field with a self-interacting potential, dependent on a single function.
 
 == Derivation
 
@@ -80,7 +82,6 @@ Substituting @U and @RP in either @efe3 or @efe4 returns the scalar potential $V
 
 $ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) $ <V>
 
-
 The dependence of the scalar potential $V$ from only the function $P$ gives way to an--albeit difficult--transposition of the conditions on the former to conditions on the latter. This is particularly useful in the definition of the requirements that the scalar potentials has to follow in order to abide to the modern no-hair theorems. In particular, these requirements can be related to the positive energy theorem #footnote[
 	Recalling the weak energy condition, i.e. for every timelike vector field $X^a$, the matter density observed by the corresponding observer is always non-negative $rho = T_(a b) X^a X^b gt.eq.slant 0$ where $X^2 > 0$, the dominant energy condition states that, in addition to the weak energy condition, for every furure-pointing causal vector field (either timelike or null) $Y^a$, the vector field $- tensor(T, +a, -b) Y^b$ must be a future-pointing causal vector, i.e. mass-energy can never be observed to be flowing faster than light. At this point, the positive energy theorem states that, as long as the dominant energy condition holds, any asymptotically flat spacetime has non-negative ADM mass-energy and the only spacetime with zero ADM mass is Minkowski space.
 	], whose influence is to limit the global form of the scalar potential: either the scalar potential is unbounded from below and/or it possess a negative region such that the negative energy is not balanced by a positive contribution from another region.
@@ -117,6 +118,8 @@ On the account of letting $R(x)$ span the range $[0,oo)$, the zeros of $P(x)$ in
 	)
 
 In both cases, the upper limit of the coordinate $x$ range corresponds the $r$-origin while $x=0$ to the $r$-asymptotic region.
+
+=== Geometry of the origin
 
 Evaluating the metric function $U$ in the form of @U at $x=x_0$ (respectively $x=oo$ for case II), we find that it can become singular and, therefore, a curvature singularity would originate at this point in the spacetime. The criterion for discerning when the singularity would ensue resides in the behaviour of $P$ and its derivatives.
 
@@ -175,10 +178,10 @@ Since we have no a priori boundary condition for the geometry at the origin, the
 presence of zeros of $U$ and curvature singularities describe the geometry of the following objects:
 
 - _Naked singularity_: a curvature singularity which is not shielded by an event horizon $(U != 0)$ \
-	Applicable in case I or in case II while condition B holds;
+	applicable in case I or in case II while condition B holds;
 
 - _Black hole_: a curvature singularity is shielded by and event horizon $(U(r_h)=0)$ \
-	Applicable in case I or in case II while condition B holds;
+	applicable in case I or in case II while condition B holds;
 
 - _Regular solution_: spacetime is everywhere regular (star-like) \
-	Applicable in case II while condition A holds;
+	applicable in case II while condition A holds.
