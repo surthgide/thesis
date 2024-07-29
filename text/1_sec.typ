@@ -11,11 +11,11 @@ The framework of general relativity will be used throughout this thesis as a bas
 
 == Mathematical background
 
-The main building blocks that compose the mathematical basis of general relativity are the language of tensors and riemannian geometry, the latter being the study of differential manifolds equipped with a riemannian metric.
+The fundamental mathematical concepts that general relativity is based upon are the language of tensors and riemannian geometry, the latter being the study of differential manifolds equipped with a riemannian metric.
 
 === Tensors
 
-In general, a tensor is defined as a multi-linear map between vector spaces or, alternatively, as a function that transforms under a change of coordinates in the following way
+A tensor is defined as a multi-linear map between vector spaces or, alternatively, as a function that transforms under a change of coordinates in the following way
 
 $ (T')^(a_1 a_2 dots.h a_n)_(b_1 b_2 dots.h b_n) = ( pdv(x'^(a_1), x^(c_1)) pdv(x'^(a_2), x^(c_2)) dots.h pdv(x'^(a_n), x^(c_n)) ) ( pdv(x^(d_1), x'^(b_1)) pdv(x^(d_2), x'^(b_2)) dots.h pdv(x^(d_n), x'^(b_n)) ) T^(c_1 c_2 dots.h c_n)_(d_1 d_2 dots.h d_n) $
 
@@ -29,7 +29,7 @@ where $w$ is the weight of the densor density and
 
 $ J^w := abs( pdv(x^a,x'^b) ) $
 
-is the Jacobian to the $w$-power.
+is the Jacobian to the $w$th-power.
 
 === Connection, Riemann tensor, metric
 
@@ -49,11 +49,11 @@ using Schwarz's theorem $partial_( "["a ) partial_( b"]" ) = 0$, torsion-free co
 
 $ tensor(R, +a, -b, -c, -d) := partial_c tensor(Gamma, +a, -b, -d) - partial_d tensor(Gamma, +a, -b, -c) + tensor(Gamma, +e, -b, -d) tensor(Gamma, +a, -e, -c) - tensor(Gamma, +e, -b, -c) tensor(Gamma, +a, -e, -d) $ <riem-ten>
 
-therefore
+we obtain
 
 $ grad_( "[" c) grad_( d "]") X^a = 1/2 tensor(R, +a, -b, -c, -d) X^b $
 
-This relation states that if and only if the Riemann tensor vanishes (flat space), the commutator vanishes too, which means that the order of derivation does not matter. This implication is related to the curvature of the manifold.
+This relation states that if and only if the Riemann tensor vanishes (i.e. in flat space), the commutator vanishes too, which means that the order of derivation does not matter. This implication is related to the curvature of the manifold.
 
 A manifold endowed with a metric, i.e. a rank 2 symmetric tensor field $g_(a b)$, is called a Riemannian manifold. Infinitesimal distances can then be computed via
 
@@ -65,7 +65,7 @@ $ g_(a b) g^(b c) = delta^c_a $
 
 where $delta^c_a$ is the Kronecker delta.
 
-Given its action, the metric is used to raise or lower indices
+If we apply the metric tensor to a generic tensor, the result is the raising or lowering of the tensor's indices
 
 $ g_(a b) T^a = T_b, wide g^(a b) T_a = T^b $
 
@@ -73,27 +73,27 @@ and to compute a vector's modulus
 
 $ X^2 := X^a X_a = g_(a b) X^a X^b $
 
-The affine connection can be written in terms of the metric tensor, the former taking the name of metric connection, and the form
+The affine connection takes the name of metric connection when written in terms of the metric tensor, and takes the form
 
 $ tensor(Gamma, +a, -b, -c) = 1/2 g^(a d) ( partial_b g_(d c) + partial_c g_(d b) partial_d g_(b c)) $ 
 
-Using this formula and @riem-ten, the Riemann tensor is shown to satisfy these relations
+Using this formula and @riem-ten, the Riemann tensor satisfies these relations:
 
 $ R_(a b c d) = - R_(a b d c) = - R_(b a c d) = R_(c d a b) $
 
 $ R_(a b c d) + R_(a d b c) + R_(a c d b) = 0 $
 
-$ grad_a R_(d e b c) + grad_c R_(d e a b) + grad_b R_(d e c a) = 0 $
+$ grad_a R_(d e b c) + grad_c R_(d e a b) + grad_b R_(d e c a) = 0 $ <bianchi>
 
-where the last ones are called Bianchi identities.
+The @bianchi are called Bianchi identities.
 
-From the Riemann tensor, the Ricci tensor $R_(a b)$ and the Ricci scalar $R$ can be defined as
+Contracting the Riemann tensor, we define the Ricci tensor $R_(a b)$ and the Ricci scalar $R$ as
 
 $ R_(a b) := tensor(R, +c, -a, -c, -b) = g^(c d) R_(d a c b) $
 
-$ R := g^(a b) R_(a b) $
+$ R := G^(a b) R_(a b) $
 
-Moreover, the Einstein tensor is defined to be
+The Einstein tensor is defined to be
 
 $ G_(a b) := R_(a b) - 1/2 g_(a b) R $ <ein-ten>
 
@@ -115,7 +115,7 @@ it is possible to define the absolute derivative of a tensor along a curve as
 
 $ dv(, u, d:upright(D)) T^(a dots.h)_(b dots.h) := grad_X T^(a dots.h)_(b dots.h) $
 
-A parallel transoported tensor satisfies
+A parallel transported tensor satisfies
 
 $ dv(, u, d:upright(D)) T^(a dots.h)_(b dots.h) = 0 $
 
@@ -131,7 +131,7 @@ Using the connection of the manifold $tensor(Gamma, +a, -b, -c)$, @geo-D can be 
 
 $ dv(x^a, s, 2) + tensor(Gamma, +a, -b, -c) dv(x^b, s) dv(x^c, s) = lambda (u) dv(x^a, s) $
 
-If the curve is re-parametrized uding a new parameter $s$ so that $lambda (s) equiv 0$, the formula for affine geodesics can be expressed as
+If the curve is re-parametrized using a new parameter $s$ so that $lambda (s) equiv 0$, the formula for affine geodesics becomes
 
 $ dv(x^a, s, 2) + tensor(Gamma, +a, -b, -c) dv(x^b, s) dv(x^c, s) = 0 $
 
@@ -143,11 +143,11 @@ We can classify vectors in a riemannian manifold based on their norm:
 - spacelike $X^2 > 0$
 - null or lightlike $X^2 = 0$
 
-A geodesic whose tangent vector on every point is null is called a null geodesic (analogous for timelike and spacelike geodesics.
+A geodesic whose tangent vector on every point is null is called a null geodesic, analogous for timelike and spacelike geodesics.
 
-All null geodesic passing through a point define a double cone called null cone or light cone: this surface divides the spacetime into three distinct regions--future, past, and elsewhere. Any point in the future and past regions can only be reached by timelike geodesics, while the elsewhere is confined to spacelike geodesics.
+All null geodesics passing through a point define a double cone called null cone or light cone: this surface divides the spacetime into three distinct regions---future, past, and elsewhere. Any point in the future and past regions can only be reached by timelike geodesics, while the elsewhere is accessible only through spacelike geodesics.
 
-A timelike geodesic represents the path of a free massive particle, while light follows null geodesics. Since this separation is invariant, this means that matter is confined to travel inside the light cone at all times.
+A timelike geodesic represents the path of a free massive particle, instead light (massless) follows null geodesics. Since this separation is invariant, this means that matter is confined to travel inside the light cone at all times.
 
 === Principles of general relativity
 
