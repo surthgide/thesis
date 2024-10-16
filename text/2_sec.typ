@@ -6,9 +6,9 @@
 
 == Motivation
 
-The idea behind this solution-generating method is to reduce the dependence of the solution obtained through the EFE to a single function that will encode all the physical information about the structure of the spacetime.
+The idea behind the solution-generating method defined in @sol-gen-met, which will be described in this chapter, is to reduce the dependence of the solution obtained through the EFE to a single function that will encode all the physical information about the structure of the spacetime.
 
-The method described in this chapter differs from the one described in @exact-sol in the fact that the scalar profile is not fixed _a priori_, but instead found via the EFE: these equations yield a differential equation whose solution will be the only (functional) dependency of the quantites used to characterize the overall solution, whose only condition will be of producing an asymptotically flat spacetime.
+Differently from the approach described in @exact-sol and similar articles, in this method the scalar profile is not fixed _a priori_, but instead found via the EFE: these equations yield a differential equation whose solution will be the only (functional) dependency of the quantites used to characterize the overall solution, whose only condition will be of producing an asymptotically flat spacetime.
 
 The method will eventually yield a static-spherically symmetric solution of $(d+2)$-dimensional gravity minimally coupled to a real scalar field with a self-interacting potential, dependent on a single function.
 

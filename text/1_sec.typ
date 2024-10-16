@@ -19,8 +19,7 @@ A tensor is defined as a multi-linear map between vector spaces or, alternativel
 
 $ (T')^(a_1 a_2 dots.h a_n)_(b_1 b_2 dots.h b_n) = ( pdv(x'^(a_1), x^(c_1)) pdv(x'^(a_2), x^(c_2)) dots.h pdv(x'^(a_n), x^(c_n)) ) ( pdv(x^(d_1), x'^(b_1)) pdv(x^(d_2), x'^(b_2)) dots.h pdv(x^(d_n), x'^(b_n)) ) T^(c_1 c_2 dots.h c_n)_(d_1 d_2 dots.h d_n) $
 
-where $T$ is a $n$-th contravariant and $m$-th covarant tensor, and $x^a$ are the cordinates of the manifold.
-
+where $T$ is a $n$-th contravariant and $m$-th covariant tensor, and $x^a$ are the coordinates of the manifold.
 In the same vein, a tensor density transforms like a tensor, except for a multiplicative factor
 
 $ (cal(T)')^(a_1 a_2 dots.h a_n)_(b_1 b_2 dots.h b_n) = J^w ( pdv(x'^(a_1), x^(c_1)) pdv(x'^(a_2), x^(c_2)) dots.h pdv(x'^(a_n), x^(c_n)) ) ( pdv(x^(d_1), x'^(b_1)) pdv(x^(d_2), x'^(b_2)) dots.h pdv(x^(d_n), x'^(b_n)) ) cal(T)^(c_1 c_2 dots.h c_n)_(d_1 d_2 dots.h d_n) $
@@ -29,11 +28,11 @@ where $w$ is the weight of the densor density and
 
 $ J^w := abs( pdv(x^a,x'^b) ) $
 
-is the Jacobian to the $w$th-power.
+is the Jacobian of the coordinates transformation to the $w$th-power.
 
 === Connection, Riemann tensor, metric
 
-In a manifold, in order to define a directional derivative that is invariant under coordinates transformations, it is necessary to introduce a relation among the tangent spaces to points on the manifold: this relation is represented by the affine connection, which supplies the manifold with a way to parallel transport vectors on the manifold. The resulting covariant derivative is defined as
+In a manifold, in order to define a directional derivative that is invariant under coordinates transformations, it is necessary to introduce a relation among the tangent spaces to points on the manifold: this relation is represented by the affine connection, which supplies the manifold with a way to parallel transport vectors on the manifold itself. The resulting covariant derivative is defined as
 
 $ grad_c T^(a dots.h)_(b dots.h) := partial_c T^(a dots.h)_(b dots.h) + tensor(Gamma, +a, -d, -c) T^(d dots.h)_(b dots.h) + dots.h - tensor(Gamma, +d, -b, -c) T^(a dots.h)_(d dots.h) + dots.h $
 
@@ -77,21 +76,19 @@ The affine connection takes the name of metric connection when written in terms 
 
 $ tensor(Gamma, +a, -b, -c) = 1/2 g^(a d) ( partial_b g_(d c) + partial_c g_(d b) partial_d g_(b c)) $ 
 
-Using this formula and @riem-ten, the Riemann tensor satisfies these relations:
+Using this formula and @riem-ten, the Riemann tensor is shown to satisfy these relations:
 
 $ R_(a b c d) = - R_(a b d c) = - R_(b a c d) = R_(c d a b) $
 
 $ R_(a b c d) + R_(a d b c) + R_(a c d b) = 0 $
 
-$ grad_a R_(d e b c) + grad_c R_(d e a b) + grad_b R_(d e c a) = 0 $ <bianchi>
-
-The @bianchi are called Bianchi identities.
+$ grad_a R_(d e b c) + grad_c R_(d e a b) + grad_b R_(d e c a) = 0 wide italic("(Bianchi identities)") $ <bianchi>
 
 Contracting the Riemann tensor, we define the Ricci tensor $R_(a b)$ and the Ricci scalar $R$ as
 
 $ R_(a b) := tensor(R, +c, -a, -c, -b) = g^(c d) R_(d a c b) $
 
-$ R := G^(a b) R_(a b) $
+$ R := g^(a b) R_(a b) $
 
 The Einstein tensor is defined to be
 
@@ -103,7 +100,7 @@ $ grad_b tensor(G, -a, +b) = 0 $
 
 === Geodesics
 
-Introducing
+Introducing the notation
 
 $ grad_X T^(a dots.h)_(b dots.h) := X^c grad_c T^(a dots.h)_(b dots.h) $
 
@@ -126,6 +123,8 @@ $ dv(, u, d:upright(D)) ( dv(x^a, u) ) = lambda (u) dv(x^a, u) $ <geo-D>
 or alternatively
 
 $ grad_X X^a = lambda (u) X^a $
+
+where $lambda (u)$ is a function of the affine parameter $u$.
 
 Using the connection of the manifold $tensor(Gamma, +a, -b, -c)$, @geo-D can be written in the following form
 
@@ -153,13 +152,13 @@ A timelike geodesic represents the path of a free massive particle, instead ligh
 
 The generalization from special relativity to general relativity passed through the following main principles:
 
-- _Equivalence_: locally, a non-rotating free fall reference frame in a gravitational feld is equivalent, i.e. indistinguishable, to one in uniform motion in absence of a gravitational field;
+- _Equivalence_: locally, a non-rotating free fall reference frame in a gravitational field is equivalent, i.e. indistinguishable, to one in uniform motion in absence of a gravitational field;
 
 - _Covariance_: all observers are equivalent, meaning all laws of physics should have tensorial form;
 
 - _Minimal gravitational coupling_: no terms that explicitly contain the curvature tensor should be added to the formulas during the genrealization of laws from special to general relativity;
 
-- _Correspondence_: general relativity should agree with special relativity in absence of a gravitational field and low velocities.
+- _Correspondence_: general relativity should agree with special relativity at low velocities and in absence of a gravitational field.
 
 === Derivation of EFE
 
@@ -167,7 +166,7 @@ Using the metric signature $g_(a b) = op(diag) (-, +, +, +)$, we derive the Eins
 
 $ S = integral dd(x,4) detg ( R + 2 kappa cal(L)_m ) $
 
-where $kappa := 8 pi G c^(-4)$ is Einstein constant and $cal(L)_m$ represents the matter fields Lagrangian.
+where $kappa := 8 pi G c^(-4)$ is Einstein constant, $g := det(g_(a b))$, and $cal(L)_m$ represents the matter fields Lagrangian.
 
 The principle of stationary action asserts that $delta S = 0$, from which
 
@@ -177,7 +176,7 @@ This condition holds for any $delta g^(a b)$, therefore
 
 $ var(R, g_(a b)) + R/(detg) var(detg, g^(a b)) = - (2 kappa)/detg var(detg cal(L)_m, g^(a b)) $ <varEFE>
 
-Using the definition of Ricci scalar, its variation gives
+Using the definition of the Ricci scalar, its variation gives
 
 $ var(R, g^(a b)) = R_(a b) $
 
@@ -189,7 +188,7 @@ Defining the stress-energy tensor as
 
 $ T_(a b) := - 2/detg var(detg cal(L)_m, g^(a b)) $
 
-and recalling @ein-ten, we can rewrite @varEFE as
+and recalling the definition of the Einstein tensor @ein-ten, we can rewrite @varEFE as
 
 $ G_(a b) = kappa T_(a b) $
 
@@ -201,4 +200,4 @@ the EFE take on the form
 
 $ G_(a b) + Lambda g_(a b) = kappa T_(a b) $
 
-This set of equations, which gives as a solution the equations of motion, can be interpreted in two ways: from right to left, the energy content of spacetime determines the curvature of the latter; from left to right, the curvature of the spacetime tells the matter within it how to move. The cosmological constant term could mean that the vacuum possesses a non-zero energy or that spacetime has an intrinsic curvature, or both.
+This set of equations, which gives as a solution the equations of motion, can be interpreted in two ways: from right to left, the energy content of spacetime determines the curvature of the latter; from left to right, the curvature of the spacetime tells the matter within it how to move. The cosmological constant term could mean that the vacuum possesses a non-zero energy, that spacetime has an intrinsic curvature, or both.
