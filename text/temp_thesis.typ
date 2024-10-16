@@ -14,7 +14,7 @@
 
 	set align(center)
 	text(
-		font: "Linux Biolinum",
+		// font: "Linux Biolinum",
 		size: 30pt,
 		weight: "bold",
 		)[#title]
