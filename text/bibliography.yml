@@ -25,3 +25,19 @@ exact-sol:
     title: Physical Review D
     volume: 84
     publisher: American Physical Society
+
+sol-gen-met:
+  type: Article
+  author:
+    - Cadoni, M.
+    - Franzin, E.
+    - Masella, F.
+    - Tuveri, M.
+  title: A Solution-Generating Method in Einstein-Scalar Gravity
+  serial number:
+    doi: "10.1007/s10440-018-00232-2"
+  date: 2018-12-27
+  parent:
+    type: Periodical
+    title: Acta Applicandae Mathematicae
+    volume: 162
