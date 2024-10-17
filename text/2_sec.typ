@@ -18,13 +18,22 @@ The framework for the method is a minimally coupled Einstein-scalar gravity in $
 
 $ S = integral dd(x, [d+2,]) sqrt(-g) ( cal(R) -2 (partial phi)^2 -V(phi) ) $
 
-where $cal(R)$ is the Ricci scalar and $V(phi)$ is the self-interacting scalar potential of the real scalar field $phi$.
+where $cal(R)$ is the Ricci scalar #footnote[
+	The symbol $cal(R)$ will be used for the Ricci scalr since $R$ is reserved for the radial function that modifies the $d$-sphere element in the infinitesimal interval.] and $V(phi)$ is the self-interacting scalar potential of the real scalar field $phi$.
 
 The article proposes radial dependency for the scalar field, i.e. $phi = phi(r)$, and a static and spherically symmetric spacetime metric for the starting assumption
 
 $ dd(s,2) = -U(r) dd(t,2) + dd(r,2)/(U(r)) + R^2 (r) dd(Omega_d, 2) $
 
 where $ dd(Omega_d, 2)$ is the line element of the $d$-dimensional sphere.
+
+For a scalar potential, the energy-momentum tensor takes the form
+
+$ T_(a b) = 4 (partial_a phi) (partial_b phi) - g_(a b) ( 2 (partial phi)^2  + V (phi) ) $
+
+while for the Einstein tensor for a static and spherically symmetric spacetime we have
+
+$ i $
 
 From these assumptions and the action, it is possible to derive the following quantities:
 
