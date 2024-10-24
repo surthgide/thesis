@@ -31,30 +31,19 @@ For a scalar potential, the energy-momentum tensor takes the form
 
 $ T_(a b) = 4 (partial_a phi) (partial_b phi) - g_(a b) ( 2 (partial phi)^2  + V (phi) ) $
 
-while for the Einstein tensor for a static and spherically symmetric spacetime we have
-
-$ i $
-
-From these assumptions and the action, it is possible to derive the following quantities:
-
-$ tensor(Gamma, +a, -b, -c) = i & wide "metric connection" \
-	tensor(cal(R), +a, -b, -c, -d) = i & wide "Riemann tensor" \
-	tensor(cal(R), -a, -b) = i & wide "Ricci tensor" \
-	cal(R) = i & wide "Ricci scalar" \
-	tensor(G, -a, -b) = i & wide "Einstein tensor" \
-	tensor(T, -a, -b) = i & wide "energy-momentum tensor" \ $
-
-Plugging the last two in the EFE we obtain
+Using this and the Einstein tensor for a static and spherically symmetric spacetime, the EFE read
 
 $ R''/R &= -2/d phi'^2 $ <riccati>
 
-$ (U R^d phi')' &= 1/4 R^d pdv(V, phi) $ 
+$ (U R^d)'' &= d(d-1) R^(d-2) - (d+2)/d R^d V $ <efe2>
 
-$ (U R^d)'' &= d(d-1) R^(d-2) - (d+2)/d R^d V $ <efe3>
-
-$ (U R^(d-1) R')' &= (d-1) R^(d-2) - 1/d R^d V $ <efe4>
+$ (U R^(d-1) R')' &= (d-1) R^(d-2) - 1/d R^d V $ <efe3>
 
 where the prime denotes derivation with respect to $r$.
+
+In addition to these we have the Poisson equation in the form
+
+$ (U R^d phi')' &= 1/4 R^d pdv(V, phi) $ <poisson>
 
 For a given scalar field $phi(r)$ and with the substitution $R(r) = exp( integral^r dd(r') y(r') )$, @riccati can be written in the form
 
@@ -66,11 +55,11 @@ Using $r_0 > 0$ as an arbitrary lenght scale, we can introduce a new dimensionle
 
 $ phi(x) = sqrt(d/2) integral dd(x) sqrt(- dot.double(P)/P) $ <phi>
 
-where the dot denotes derivation with respect to $x$ and
+where the dot denotes derivation with respect to $x$, and
 
 $ R(x) = r_0/x P(x) $ <RP>
 
-From @efe3 and @efe4, we can isolate $V$
+From @efe2 and @efe3, we can isolate $V$
 
 $ -(d+2)/d R^d V &= (U R^d)'' - d (d-1) R^(d-2) \
 	-(d+2)/d R^d V &= (d+2)(U R^(d-1) R')' - (d+2) (d-1) R^(d-2) $
@@ -87,7 +76,7 @@ $ U(x) = (r_0^2 P^2)/x^2 ( c_2 - (2(d-1))/r_0^2 integral dd(x) x^d/P^(d+2) integ
 
 where $c_1$ and $c_2$ are integration constants, whose values can be determined imposing boundary conditions on the asymptotic behaviour of the spacetime metric.
 
-Substituting @U and @RP in either @efe3 or @efe4 returns the scalar potential $V$, this too only dependent on the function $P(x)$
+Substituting @U and @RP in either @efe2 or @efe3 returns the scalar potential $V$, this too only dependent on the function $P(x)$
 
 $ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) $ <V>
 
