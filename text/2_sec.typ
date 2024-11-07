@@ -59,28 +59,25 @@ where the dot denotes derivation with respect to $x$, and
 
 $ R(x) = r_0/x P(x) $ <RP>
 
-From @efe2 and @efe3, we can isolate $V$
+Defining $u := U R^d$ and substituting it in @efe2 and @efe3, we can isolate $V$ to obtain a second order ODE in $u$
 
-$ -(d+2)/d R^d V &= (U R^d)'' - d (d-1) R^(d-2) \
-	-(d+2)/d R^d V &= (d+2)(U R^(d-1) R')' - (d+2) (d-1) R^(d-2) $
+$ u'' - (d+2) (u R'/R)' = - 2 (d-1) R^(d-2) $
 
-therefore
+From @exact-sol we get the solution to this ODE, from which we extract the function $U$
 
-$ (U R^d)'' - d (d-1) R^(d-2) = (d+2)(U R^(d-1) R')' - (d+2) (d-1) R^(d-2) \
-	arrow.b.double \
-	i $
+$ U(r) = u / R^d = R^2 ( c_2 + integral dd(r)/R^(d+2) ( - 2 (d-1) integral dd(r) R^(d+2) - c_1 ) ) $
 
-Solving the last differential equation yields the metric function $U$ in terms of the function $P(x)$
+Using $dd(r) = - ( r_0 slash x^2 ) dd(x)$ and @RP, we can rewrite it as
 
 $ U(x) = (r_0^2 P^2)/x^2 ( c_2 - (2(d-1))/r_0^2 integral dd(x) x^d/P^(d+2) integral dd(x') P^(d-2)/x'^d + c_1/r_0^(d+1) integral dd(x) x^d/P^(d+2) ) $ <U>
 
 where $c_1$ and $c_2$ are integration constants, whose values can be determined imposing boundary conditions on the asymptotic behaviour of the spacetime metric.
 
-Substituting @U and @RP in either @efe2 or @efe3 returns the scalar potential $V$, this too only dependent on the function $P(x)$
+Substituting @U and @RP in @efe2 yields the scalar potential $V$, this too only dependent on the function $P(x)$
 
-$ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^d P^d) dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) $ <V>
+$ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^2 P^d) dv(,x) ( x^2 dv(,x) (U P^d)/x^d ) $ <V>
 
-The dependence of the scalar potential $V$ from only the function $P$ gives way to an--albeit difficult--transposition of the conditions on the former to conditions on the latter. This is particularly useful in the definition of the requirements that the scalar potentials has to follow in order to abide to the modern no-hair theorems. In particular, these requirements can be related to the positive energy theorem #footnote[
+The dependence of the scalar potential $V$ from only the function $P$ gives way to an--albeit difficult--transposition of the conditions on the former to conditions on the latter. This is particularly useful in the definition of the requirements that the scalar potential has to follow in order to abide to the modern no-hair theorems. In particular, these requirements can be related to the positive energy theorem #footnote[
 	Recalling the weak energy condition, i.e. for every timelike vector field $X^a$, the matter density observed by the corresponding observer is always non-negative $rho = T_(a b) X^a X^b gt.eq.slant 0$ where $X^2 > 0$, the dominant energy condition states that, in addition to the weak energy condition, for every furure-pointing causal vector field (either timelike or null) $Y^a$, the vector field $- tensor(T, +a, -b) Y^b$ must be a future-pointing causal vector, i.e. mass-energy can never be observed to be flowing faster than light. At this point, the positive energy theorem states that, as long as the dominant energy condition holds, any asymptotically flat spacetime has non-negative ADM mass-energy and the only spacetime with zero ADM mass is Minkowski space.
 	], whose influence is to limit the global form of the scalar potential: either the scalar potential is unbounded from below and/or it possess a negative region such that the negative energy is not balanced by a positive contribution from another region.
 
@@ -90,7 +87,7 @@ As seen in the previous section, the scalar field $phi$, the metric function $U$
 
 === Behaviour of $P(x)$
 
-The reality of $phi$, through @phi, leads to $dot.double(P) slash P < 0$. We also have that the radius of the $d$-sphere $R(x)$ must be analytic, positive and monotonically decreasing, therefore
+The reality of $phi$, through @phi, leads to $dot.double(P) slash P < 0$; extending this reasoning up to infinity, there is no reason that prevents the potential from diverging, thus $P gt.eq.slant 0$. We also have that the radius of the $d$-sphere $R(x)$ must be analytic, positive and monotonically decreasing, therefore
 
 $ cases(
 	phi in RR,
@@ -98,7 +95,7 @@ $ cases(
 	dot(R) < 0)
 quad arrow.r.double.long quad 
 cases(
-	P > 0,
+	P gt.eq.slant 0,
 	dot.double(P) < 0,
 	dot(P) slash x - P slash x^2 < 0) $
 
@@ -115,7 +112,7 @@ On the account of letting $R(x)$ span the range $[0,oo)$, the zeros of $P(x)$ in
 	[$display(lim_(x -> oo)) P(x) = "const" != 0$ leads to $x in [0, oo)$],
 	)
 
-In both cases, the upper limit of the coordinate $x$ range corresponds the $r$-origin while $x=0$ to the $r$-asymptotic region.
+In both cases, the upper limit of the coordinate $x$ range corresponds to the $r$-origin while $x=0$ to the $r$-asymptotic region.
 
 === Geometry of the origin
 
