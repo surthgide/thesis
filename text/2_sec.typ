@@ -59,7 +59,7 @@ where the dot denotes derivation with respect to $x$, and
 
 $ R(x) = r_0/x P(x) $ <RP>
 
-Defining $u := U R^d$ and substituting it in @efe2 and @efe3, we can isolate $V$ to obtain a second order ODE in $u$
+Defining $u := U R^d$ and substituting it in @efe2 and @efe3, we can then isolate $V$ to obtain a second order ODE in $u$
 
 $ u'' - (d+2) (u R'/R)' = - 2 (d-1) R^(d-2) $
 
