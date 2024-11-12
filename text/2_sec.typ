@@ -67,13 +67,13 @@ From @exact-sol we get the solution to this ODE, from which we extract the funct
 
 $ U(r) = u / R^d = R^2 ( c_2 + integral dd(r)/R^(d+2) ( - 2 (d-1) integral dd(r) R^(d+2) - c_1 ) ) $
 
-Using $dd(r) = - ( r_0 slash x^2 ) dd(x)$ and @RP, we can rewrite it as
+Using $dd(r) = - ( r_0 slash x^2 ) dd(x)$ and @RP, we can rewrite it as dependent only on the function $P(x)$
 
 $ U(x) = (r_0^2 P^2)/x^2 ( c_2 - (2(d-1))/r_0^2 integral dd(x) x^d/P^(d+2) integral dd(x') P^(d-2)/x'^d + c_1/r_0^(d+1) integral dd(x) x^d/P^(d+2) ) $ <U>
 
 where $c_1$ and $c_2$ are integration constants, whose values can be determined imposing boundary conditions on the asymptotic behaviour of the spacetime metric.
 
-Substituting @U and @RP in @efe2 yields the scalar potential $V$, this too only dependent on the function $P(x)$
+Substituting @U and @RP in @efe2 yields the scalar potential $V$, this too dependent only on the function $P(x)$
 
 $ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^2 P^d) dv(,x) ( x^2 dv(,x) (U P^d)/x^d ) $ <V>
 
@@ -120,7 +120,7 @@ Evaluating the metric function $U$ in the form of @U at $x=x_0$ (respectively $x
 
 Substituting $d=2$ (i.e. considering a 4-dimensional spacetime) in @phi, @U and @V we obtain
 
-$ phi(x) = integral dd(x) sqrt(- 1/P dv(P, x, 2)) $ <phi4>
+$ phi(x) = integral dd(x) sqrt(- dot.double(P)/P ) $ <phi4>
 
 $ U(x) = (r_0^2 P^2)/x^2 ( c_2 - 2/r_0^2 integral dd(x) x/P^(4) + c_1/r_0^(3) integral dd(x) x^2/P^(4) ) $ <U4>
 

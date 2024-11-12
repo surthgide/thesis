@@ -74,7 +74,7 @@ $ X^2 := X^a X_a = g_(a b) X^a X^b $
 
 The affine connection takes the name of metric connection when written in terms of the metric tensor, and takes the form
 
-$ tensor(Gamma, +a, -b, -c) = 1/2 g^(a d) ( partial_b g_(d c) + partial_c g_(d b) partial_d g_(b c)) $ 
+$ tensor(Gamma, +a, -b, -c) = 1/2 g^(a d) ( partial_b g_(d c) + partial_c g_(d b) - partial_d g_(b c)) $ 
 
 Using this formula and @riem-ten, the Riemann tensor is shown to satisfy these relations:
 
