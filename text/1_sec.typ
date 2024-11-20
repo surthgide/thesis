@@ -192,6 +192,14 @@ and recalling the definition of the Einstein tensor @ein-ten, we can rewrite @va
 
 $ G_(a b) = kappa T_(a b) $
 
+An alternative rappresentation of the EFE can be obtained via taking the trace with respect to the metric of both sides
+
+$ R - 2 R = - R = kappa T, wide g^(a b) g_(a b) = 4 $
+
+Substituting this in the EFE yields
+
+$ R_(a b) = kappa ( T_(a b) - 1/2 T g_(a b) ) $ <EFE-alt>
+
 Furthermore, if the cosmological constant $Lambda$ is added in the Einstein-Hilbert action
 
 $ S = integral dd(x,4) detg ( R - 2 Lambda + 2 kappa cal(L)_m ) $
