@@ -29,7 +29,7 @@ where $ dd(Omega_d, 2)$ is the line element of the $d$-dimensional sphere.
 
 For a scalar potential, the energy-momentum tensor takes the form
 
-$ T_(a b) = 4 (partial_a phi) (partial_b phi) - g_(a b) ( 2 (partial phi)^2  + V (phi) ) $
+$ T_(a b) = 4 (partial_a phi) (partial_b phi) - g_(a b) ( 2 (partial phi)^2  + V (phi) ) $ <em-ten>
 
 Using this and the Einstein tensor for a static and spherically symmetric spacetime, the EFE read
 
@@ -126,11 +126,21 @@ $ U(x) = (r_0^2 P^2)/x^2 ( c_2 - 2/r_0^2 integral dd(x) x/P^(4) + c_1/r_0^(3) in
 
 $ V[phi(x)] = x^2/(r_0^2 P^2) ( 1 - x^2/2 dv(,x) ( x^2 dv(,x) (U P^2)/x^2 ) ) $ <V4>
 
-From these and the Ricci tensor recovered from the EFE
+Substituting @em-ten and its trace into @EFE-alt yields
 
 $ cal(R)_(a b) = 2 (partial_a phi) (partial_b phi) + 1/2 g_(a b) V(phi) $
 
-we get the curvature invariants
+From the line element in 4 dimensions we extrapolate the inverse metric tensor
+
+$ g^(a b) = op(diag)(- 1/U, U, R^(-2), R^(-2) f(Omega)^(-1)) $
+
+and since $phi$ depends only on $x$
+
+$ g^(a b) (partial_a phi) (partial_b phi) = g_(1 1)(partial_r phi)^2
+	= U (- x^2/r_0 partial_x phi)^2
+	= - (x^4 U dot.double(P))/(r_0^2 P) $
+
+Now we can calculate the following curvature invariants
 
 $ cal(R) = 2 (V - (x^4 U dot.double(P))/(r_0^2 P)) $
 
