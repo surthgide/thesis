@@ -116,7 +116,7 @@ In both cases, the upper limit of the coordinate $x$ range corresponds to the $r
 
 === Geometry of the origin
 
-Evaluating the metric function $U$ in the form of @U at $x=x_0$ (respectively $x=oo$ for case II), we find that it can become singular and, therefore, a curvature singularity would originate at this point in the spacetime. The criterion for discerning when the singularity would ensue resides in the behaviour of $P$ and its derivatives.
+Evaluating the metric function $U$ in the form of @U at $x=x_0$ (respectively $x=oo$ for case II), we find that it can become singular and, therefore, a curvature singularity would originate at this point in the spacetime. The criterion for discerning where the singularity would ensue resides in the behaviour of $P$ and its derivatives.
 
 Substituting $d=2$ (i.e. considering a 4-dimensional spacetime) in @phi, @U and @V we obtain
 
@@ -190,3 +190,11 @@ presence of zeros of $U$ and curvature singularities describe the geometry of th
 
 - _Regular solution_: spacetime is everywhere regular (star-like) \
 	applicable in case II while condition A holds.
+
+== Sine-Gordon solution
+
+Choosing a scalar field with a sine-Gordon soliton profile yields a star-like regular solutions. This can be achieved by setting
+
+$ P(x) = 2 - e^(-x) comma wide 0 lt.eq.slant x < oo $
+
+
