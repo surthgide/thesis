@@ -23,7 +23,7 @@ where $cal(R)$ is the Ricci scalar #footnote[
 
 The article proposes radial dependency for the scalar field, i.e. $phi = phi(r)$, and a static and spherically symmetric spacetime metric for the starting assumption
 
-$ dd(s,2) = -U(r) dd(t,2) + dd(r,2)/(U(r)) + R^2 (r) dd(Omega_d, 2) $
+$ dd(s,2) = -U(r) dd(t,2) + dd(r,2)/(U(r)) + R^2 (r) dd(Omega_d, 2) $ <line-el>
 
 where $ dd(Omega_d, 2)$ is the line element of the $d$-dimensional sphere.
 
@@ -130,7 +130,7 @@ Substituting @em-ten and its trace into @EFE-alt yields
 
 $ cal(R)_(a b) = 2 (partial_a phi) (partial_b phi) + 1/2 g_(a b) V(phi) $
 
-From the line element in 4 dimensions we extrapolate the inverse metric tensor
+From the line element in 4 dimensions of @line-el we extrapolate the inverse metric tensor
 
 $ g^(a b) = op(diag)(- 1/U, U, R^(-2), R^(-2) f(Omega)^(-1)) $
 
