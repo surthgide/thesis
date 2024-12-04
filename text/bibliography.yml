@@ -41,3 +41,20 @@ sol-gen-met:
     type: Periodical
     title: Acta Applicandae Mathematicae
     volume: 162
+
+sine-gor:
+  type: Article
+  author:
+    - Franzin, E.
+    - Cadoni, M.
+    - Tuveri, M.
+  title: Sine-Gordon solitonic scalar stars and black holes
+  serial number:
+    doi: "10.1103/PhysRevD.97.124018"
+  date: 2018-06-11
+  parent:
+    type: Periodical
+    title: Physical Review D
+    volume: 97
+    publisher: American Physical Society
+
