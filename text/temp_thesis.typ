@@ -54,7 +54,7 @@
 	v(100pt)
 
 	align(right)[
-		_To Sarah, my friends, and family._
+		_To Sarah, my friends, and family_
 		]
 	
 	pagebreak()
