@@ -147,7 +147,7 @@ $ cal(R) = 2 (V - (x^4 U dot.double(P))/(r_0^2 P)) $
 $ cal(R)_(a b) cal(R)^(a b) = V^2 - ((2 x^4 U dot.double(P))/(r_0^2 P)) V + ((2 x^4 U dot.double(P))/(r_0^2 P))^2 $
 
 $ K &:= cal(R)_(a b c d) cal(R)^(a b c d) \
-	&= (4 x^2)/(r_0^4 P^3) (U (P - x dot(P))^2 - 1) (r_0^2 V P + 2 x^4 U dot.double(P)) + (12 x^4)/(r_0^4 P^4) (U (P - x dot(P))^2 - 1)^2 + V^2 +(8 x^8 U^2 dot.double(P)^2)/(r_0^4 P^2) $
+	&= (4 x^2)/(r_0^4 P^3) (U (P - x dot(P))^2 - 1) (r_0^2 V P + 2 x^4 U dot.double(P)) + (12 x^4)/(r_0^4 P^4) (U (P - x dot(P))^2 - 1)^2 + V^2 +(8 x^8 U^2 dot.double(P)^2)/(r_0^4 P^2) $ <K>
 
 At this point, by studying the behaviour of the quantities inside the aforementioned invariants, we can deduce the conditions for the behaviour at $x=x_0$ or $x=oo$:
 
@@ -197,4 +197,19 @@ Choosing a scalar field with a sine-Gordon soliton profile yields a star-like re
 
 $ P(x) = 2 - e^(-x) comma wide 0 lt.eq.slant x < oo $
 
+Considering again $d=4$ and substituting the last equation in @phi returns
 
+$ phi = integral dd(x) e^(-x slash 2)/sqrt(2 - e^(-x))
+	= - 2 arcsin((e^(- r_0 slash (2 r)))/sqrt(2)) $
+
+This solution is the same as the 1-soliton solution of the sine-Gordon equation
+
+$ phi_(t t) - phi_(x x) + sin(phi) = 0 $
+
+A similar set of solutions can be obtained via
+
+$ P(x) = ((c+d)/(c + d e^(-a x)))^b comma wide a, b, c, d in RR $
+
+If the integration constant $c_1$ in @U4 is zero, it cuts out the diverging part of the metric potential, leaving a horizonless and everywhere regular solution; otherwise, depending on the value of the ratio $c_1 slash r_0$, we either have a solution describing a naked singularity ($c_1 slash r_0 > 0$) or a black hole ($c_1 slash r_0 < 0$). We know of a singularity in the origin because, even though the curvature and the Riemann scalars are non zero, the Kretschmann scalar of @K vanishes. Regarding the regular solution, it is of note because it interpolates between and AdS and an asymptoticaly flat spacetime: while the inner region has negative energy, the solution's total energy is offset towards a positive total energy value by the asymptotic region. 
+
+An in-depth analysis of this solution can be found in @sine-gor.
