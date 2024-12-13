@@ -59,21 +59,35 @@ where the dot denotes derivation with respect to $x$, and
 
 $ R(x) = r_0/x P(x) $ <RP>
 
-Defining $u := U R^d$ and substituting it in @efe2 and @efe3, we can then isolate $V$ to obtain a second order ODE in $u$
+Following @exact-sol, defining $u := U R^d$ and substituting it in @efe2 and @efe3, we can then isolate $V$ to obtain a second order ODE in $u$
 
 $ u'' - (d+2) (u R'/R)' = - 2 (d-1) R^(d-2) $
 
-From @exact-sol we get the solution to this ODE, from which we extract the function $U$
+We can reduce this to a first order ODE via an integral of both members
 
-$ U(r) = u / R^d = R^2 ( c_2 + integral dd(r)/R^(d+2) ( - 2 (d-1) integral dd(r) R^(d+2) - c_1 ) ) $
+$ u' - (d+2) R'/R u + c_1 = - 2 (d-1) integral dd(r) R^(d-2) $
 
-Using $dd(r) = - ( r_0 slash x^2 ) dd(x)$ and @RP, we can rewrite it as dependent only on the function $P(x)$
+At this point, using the standard formula to solve the differential equation
+
+$ u = e^(- integral eta) ( integral xi e^(- integral eta) + c_2 )
+	wide 
+	cases(
+		eta := - (d+2) display(R'/R),
+		,
+		xi := - 2 (d-1) display(integral) dd(r) R^(d-2)
+	) $
+
+we obtain
+
+$ u(r) = R^(d+2) ( c_2 + integral dd(r)/R^(d+2) ( - 2 (d-1) integral dd(r) R^(d+2) - c_1 ) ) $
+
+Using $dd(r) = - ( r_0 slash x^2 ) dd(x)$, the definition of $u$ and @RP, we can then write the function $U$ as dependent only on the function $P(x)$
 
 $ U(x) = (r_0^2 P^2)/x^2 ( c_2 - (2(d-1))/r_0^2 integral dd(x) x^d/P^(d+2) integral dd(x') P^(d-2)/x'^d + c_1/r_0^(d+1) integral dd(x) x^d/P^(d+2) ) $ <U>
 
 where $c_1$ and $c_2$ are integration constants, whose values can be determined imposing boundary conditions on the asymptotic behaviour of the spacetime metric.
 
-Substituting @U and @RP in @efe2 yields the scalar potential $V$, this too dependent only on the function $P(x)$
+Substituting @RP in @efe2 yields the scalar potential $V$, this too dependent only on the function $P(x)$
 
 $ V[phi(x)] = (d^2(d-1))/(d+2) x^2/(r_0^2 P^2) - d/(d+2) x^(d+2)/(r_0^2 P^d) dv(,x) ( x^2 dv(,x) (U P^d)/x^d ) $ <V>
 
