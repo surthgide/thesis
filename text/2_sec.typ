@@ -27,9 +27,13 @@ $ dd(s,2) = -U(r) dd(t,2) + dd(r,2)/(U(r)) + R^2 (r) dd(Omega_d, 2) $ <line-el>
 
 where $ dd(Omega_d, 2)$ is the line element of the $d$-dimensional sphere.
 
-For a scalar potential, the energy-momentum tensor takes the form
+For a material lagrangian
 
-$ T_(a b) = 4 (partial_a phi) (partial_b phi) - g_(a b) ( 2 (partial phi)^2  + V (phi) ) $ <em-ten>
+$ cal(L)_m = -2 (partial phi)^2 -V(phi) $
+
+the energy-momentum tensor from @em-ten-def takes the form
+
+$ T_(a b) = 2 (partial_a phi) (partial_b phi) - 1/2 thin g_(a b) ( 2 (partial phi)^2  + V (phi) ) $ <em-ten>
 
 Using this and the Einstein tensor for a static and spherically symmetric spacetime, the EFE read
 

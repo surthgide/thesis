@@ -186,7 +186,7 @@ $ var(detg, g^(a b)) = - detg/2 g_(a b) $
 
 Defining the stress-energy tensor as
 
-$ T_(a b) := - 2/detg var(detg cal(L)_m, g^(a b)) $
+$ T_(a b) := - 1/detg var(detg cal(L)_m, g^(a b)) $ <em-ten-def>
 
 and recalling the definition of the Einstein tensor @ein-ten, we can rewrite @varEFE as
 
