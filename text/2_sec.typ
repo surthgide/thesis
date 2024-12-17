@@ -215,10 +215,10 @@ Choosing a scalar field with a sine-Gordon soliton profile yields a star-like re
 
 $ P(x) = 2 - e^(-x) comma wide 0 lt.eq.slant x < oo $
 
-Considering again $d=4$ and substituting the last equation in @phi returns
+Considering again $d=4$ and substituting the last equation in @phi returns #footnote[The square root in the definition of $phi$ allows for the choice of sign in the $arcsin$. Another matter of choice regards the constant $pi$: it is a convention to have a kink that goes from 0 tot $pi$ for the solitons.]
 
 $ phi = integral dd(x) e^(-x slash 2)/sqrt(2 - e^(-x))
-	= - 2 arcsin((e^(- r_0 slash (2 r)))/sqrt(2)) $
+	= pi - 2 arcsin((e^(- r_0 slash (2 r)))/sqrt(2)) $
 
 This solution is the same as the 1-soliton solution of the sine-Gordon equation
 
